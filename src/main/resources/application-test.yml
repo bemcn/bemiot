@@ -1,0 +1,99 @@
+spring:
+  datasource:
+    postgresql:
+      driver-class-name: org.postgresql.Driver
+      jdbc-url: jdbc:postgresql://127.0.0.1:5432/BemCnIot?currentSchema=public
+      username: postgres
+      password: admin123456
+      type: com.zaxxer.hikari.HikariDataSource
+      hikari:
+        minimum-idle: 5
+        maximum-pool-size: 15
+        auto-commit: true
+        idle-timeout: 30000
+        pool-name: PgsqlHikariCP
+        max-lifetime: 1800000
+        connection-timeout: 30000
+    tdengine:
+      driver-class-name: com.taosdata.jdbc.rs.RestfulDriver
+      jdbc-url: jdbc:TAOS-RS://127.0.0.1:6041?useSSL=false&user=root&password=admin123456
+      type: com.zaxxer.hikari.HikariDataSource
+      hikari:
+        minimum-idle: 5
+        maximum-pool-size: 15
+        auto-commit: true
+        idle-timeout: 30000
+        pool-name: TDengineHikariCP
+        max-lifetime: 1800000
+        connection-timeout: 30000
+        connection-test-query: show tables
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: admin123456
+      lettuce:
+        pool:
+          max-active: 10
+          max-wait: -1
+          max-idle: 10
+          min-idle: 0
+      timeout: 10000
+      database: 1
+  cache:
+    type: redis
+    redis:
+      time-to-live: 7200
+      cache-null-values: false
+  mqtt:
+    url: tcp://127.0.0.1:1883
+    username: admin
+    password: admin123456
+    connection-timeout: 100
+    keep-alive-interval: 20
+    max-inflight: 10
+    subscribe:
+      topics: warn_topic,sensor_data,device_status,#
+  rabbitmq:
+    management:
+      host: 127.0.0.1
+      port: 15672
+      username: admin
+      password: admin123456
+map-key: 20000002000000000000200000000000
+media:
+  media_ip: 127.0.0.1
+  thread_num: 8
+  rtmp_port: 7935
+  rtsp_port: 7554
+  http_port: 7080
+  rtc_port: 8000
+  rtc_host: 127.0.0.1
+  auto_close: 0
+  streamNoneReaderDelayMS: 30000
+  maxStreamWaitMS: 1500
+  enable_ts: 1
+  enable_hls: 1
+  enable_fmp4: 0
+  enable_rtsp: 1
+  enable_rtmp: 1
+  enable_mp4: 0
+  enable_hls_fmp4: 1
+  enable_audio: 1
+  mp4_as_player: 1
+  mp4_max_second: 3600
+  mp4_save_path: /media
+  hls_save_path: /media
+  rootPath: /media
+  hls_demand: 0
+  broadcastRecordTs: 1
+  segDur: 3
+  segNum: 3
+  rtsp_demand: 0
+  rtmp_demand: 0
+  ts_demand: 1
+  fmp4_demand: 1
+  log_level: 2
+  log_mask: 1
+  log_file_days: 1
+  log_path: /media
