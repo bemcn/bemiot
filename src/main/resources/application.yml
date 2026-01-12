@@ -1,0 +1,67 @@
+server:
+  port: 8010
+  undertow:
+    url-charset: UTF-8
+    direct-buffers: true
+    threads:
+      io: 200
+    max-http-post-size: 10485760
+    max-headers: 1024
+spring:
+  application:
+    name: bemiot
+  profiles:
+    active: dev   #运行模式 dev test product
+  mvc:
+    content negotiation:
+      favor-parameter: true
+      media-types:
+        json: application/json
+        xml: application/xml
+    async:
+      request-timeout: 300000
+    converters:
+      preferred-json-mapper: jackson
+  devtools:
+    restart:
+      enabled: true
+      exclude: static/**,public/**
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+mybatis-plus:
+  type-handlers-package: com.baomidou.mybatisplus.extension.handlers
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: is_deleted # 全局逻辑删除字段名
+      logic-delete-value: 1 # 逻辑已删除值
+      logic-not-delete-value: 0 # 逻辑未删除值
+  type-aliases-package: org.bem.iot.model
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印 sql 日志
+    map-underscore-to-camel-case: true #开启自动驼峰命名规则（camel case）映射
+    lazy-loading-enabled: true #开启延时加载开关
+    aggressive-lazy-loading: false #将积极加载改为消极加载（即按需加载）,默认值就是false
+    lazy-load-trigger-methods: "" #阻挡不相干的操作触发，实现懒加载
+    cache-enabled: true #打开全局缓存开关（二级环境），默认值就是true
+logging:
+  config: classpath:logback.xml
+  level:
+    org:
+      mybatis:
+        spring:
+          SqlSessionUtils: debug
+          SqlSessionFactory: info
+          SqlSessionTemplate: debug
+    com:
+      baomidou:
+        mybatisplus: DEBUG
+auth:
+  version: 1.0
+  passkey: a#i89&mn7D287L8t
