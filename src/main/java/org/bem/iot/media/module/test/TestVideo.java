@@ -1,0 +1,141 @@
+package org.bem.iot.media.module.test;
+
+import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.util.StrUtil;
+import com.aizuda.zlm4j.structure.MK_INI;
+import com.aizuda.zlm4j.structure.MK_MEDIA;
+import com.sun.jna.Memory;
+import com.sun.jna.Pointer;
+import org.bem.iot.media.model.param.TestVideoParam;
+
+import java.awt.*;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.TimeUnit;
+
+import static org.bem.iot.media.context.MediaServerContext.ZLM_API;
+
+public class TestVideo {
+    private final TestVideoParam param;
+    private MK_MEDIA mkMedia;
+    private Pointer yPointer;
+    private Pointer uPointer;
+    private Pointer vPointer;
+    private int[] linesize;
+    private final LinkedBlockingQueue<Long> frameQueue;
+    private long pts = 0;
+
+    public TestVideo(TestVideoParam param) {
+        this.param = param;
+        this.frameQueue = new LinkedBlockingQueue<>(25);
+    }
+
+    /**
+     * 初始化视频
+     */
+    public void initVideo() {
+        //创建媒体流 支持配置参数
+        MK_INI mkIni = ZLM_API.mk_ini_create();
+        ZLM_API.mk_ini_set_option_int(mkIni, "enable_rtsp", param.getEnableRtsp());
+        ZLM_API.mk_ini_set_option_int(mkIni, "enable_rtmp", param.getEnableRtmp());
+        ZLM_API.mk_ini_set_option_int(mkIni, "enable_fmp4", param.getEnableFmp4());
+        ZLM_API.mk_ini_set_option_int(mkIni, "enable_hls", param.getEnableHls());
+        ZLM_API.mk_ini_set_option_int(mkIni, "enable_ts", param.getEnableTs());
+        ZLM_API.mk_ini_set_option_int(mkIni, "enable_mp4", param.getEnableMp4());
+        ZLM_API.mk_ini_set_option_int(mkIni, "mp4_max_second", param.getMp4MaxSecond());
+        ZLM_API.mk_ini_set_option_int(mkIni, "auto_close", param.getAutoClose());
+        mkMedia = ZLM_API.mk_media_create2("__defaultVhost__", param.getApp(), param.getStream(), 0, mkIni);
+        ZLM_API.mk_ini_release(mkIni);
+        ZLM_API.mk_media_init_video(mkMedia, 0, param.getWidth(), param.getHeight(), param.getFps(), param.getBitRate());
+        ZLM_API.mk_media_init_complete(mkMedia);
+    }
+
+    /**
+     * 开始测试视频
+     */
+    public void startTestVideo() {
+        new Thread(this::createVideoFrame).start();
+        new Thread(this::sendVideoFrame).start();
+    }
+
+    /**
+     * 创建视频帧
+     */
+    private void createVideoFrame() {
+        int timebase = 1000 / param.getFps();
+        while (mkMedia != null) {
+            long startTime = System.currentTimeMillis();
+            //YUV420PBarGenerator.YUV420PFrame yuv420PFrame = YUV420PBarGenerator.generateBarFrame(param.getWidth(), param.getHeight());
+            Color bgColor = new Color(200, 255, 255);
+            Color textColor = new Color(255, 120, 0);
+            String text= StrUtil.format("欢迎使用ZLM4J！这是一个演示视频，当前时间是：{}", DateUtil.now());
+            YuvImageGenerator.YUV420PFrame yuv420PFrame = YuvImageGenerator.generateYuv420pImage(param.getWidth(), param.getHeight(), bgColor, text, 56, textColor);
+            if (yPointer == null) {
+                yPointer = new Memory((long) yuv420PFrame.getHeight() * yuv420PFrame.getLinesize()[0]);
+            }
+            if (uPointer == null) {
+                uPointer = new Memory((long) yuv420PFrame.getHeight() * yuv420PFrame.getLinesize()[1] / 2);
+            }
+            if (vPointer == null) {
+                vPointer = new Memory((long) yuv420PFrame.getHeight() * yuv420PFrame.getLinesize()[2] / 2);
+            }
+            yPointer.write(0, yuv420PFrame.getYData(), 0, yuv420PFrame.getHeight() * yuv420PFrame.getLinesize()[0]);
+            uPointer.write(0, yuv420PFrame.getUData(), 0, yuv420PFrame.getHeight() * yuv420PFrame.getLinesize()[1] / 2);
+            vPointer.write(0, yuv420PFrame.getVData(), 0, yuv420PFrame.getHeight() * yuv420PFrame.getLinesize()[2] / 2);
+            linesize = yuv420PFrame.getLinesize();
+            while (true) {
+                long diffTime = System.currentTimeMillis() - startTime;
+                if (diffTime < timebase) {
+                    try {
+                        Thread.sleep(2);
+                    } catch (InterruptedException ignored) {
+                    }
+                } else {
+                    break;
+                }
+            }
+            frameQueue.offer(pts);
+            pts += timebase;
+        }
+    }
+
+    /**
+     * 发送帧
+     */
+    private void sendVideoFrame() {
+        while (mkMedia != null) {
+            try {
+                Long ptsNow = frameQueue.poll(5, TimeUnit.SECONDS);
+                if (ptsNow!=null) {
+                    synchronized (this) {
+                        if (mkMedia != null) {
+                            ZLM_API.mk_media_input_yuv(mkMedia, new Pointer[]{yPointer, uPointer, vPointer}, linesize, ptsNow);
+                        }
+                    }
+                }
+            } catch (InterruptedException ignored) {
+            }
+        }
+    }
+
+    /**
+     * 关闭视频
+     */
+    public void closeVideo() {
+        synchronized (this) {
+            if (mkMedia != null) {
+                ZLM_API.mk_media_release(mkMedia);
+                mkMedia = null;
+            }
+            if (yPointer != null) {
+                ((Memory) yPointer).close();
+            }
+            if (uPointer != null) {
+                ((Memory) uPointer).close();
+            }
+            if (vPointer != null) {
+                ((Memory) vPointer).close();
+            }
+        }
+    }
+
+}

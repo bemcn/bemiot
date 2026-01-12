@@ -1,0 +1,109 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.3'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'org.bem'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation('org.springframework.boot:spring-boot-starter-web') {
+		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+	}
+	implementation 'org.springframework.boot:spring-boot-starter-undertow'
+	testImplementation project(path: ':')
+	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+	implementation 'org.springframework:spring-context-support'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	implementation 'org.springframework.boot:spring-boot-devtools'
+	//验证
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	//xml支持
+	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
+	//缓存依赖
+	//implementation 'org.springframework.boot:spring-boot-starter-parent'
+	implementation 'org.apache.commons:commons-pool2'
+	implementation 'org.springframework.boot:spring-boot-starter-cache'
+	//redis依赖
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+	//TDEngine数据库
+	implementation 'com.taosdata.jdbc:taos-jdbcdriver:3.2.7'
+
+	//postgresql数据库
+	implementation 'org.postgresql:postgresql'
+
+	//mybatis-plus依赖
+	implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.5'
+	implementation 'com.github.jsqlparser:jsqlparser:4.5'
+	implementation 'org.mybatis:mybatis-spring:3.0.3'
+
+	//MQTT
+	implementation 'org.springframework.boot:spring-boot-starter-integration'
+	implementation 'org.springframework.integration:spring-integration-stream'
+	implementation 'org.springframework.integration:spring-integration-mqtt'
+
+	//FastJson
+	implementation 'com.alibaba:fastjson:2.0.32'
+
+	//lombok 注解工具类
+	implementation 'org.projectlombok:lombok:1.18.26'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	//lang3工具类
+	implementation 'cn.hutool:hutool-core:5.8.25'
+
+	//base64
+	implementation 'org.apache.directory.studio:org.apache.commons.codec:1.8'
+
+	//表达式引擎
+	implementation 'com.googlecode.aviator:aviator:5.3.1'
+
+	//操作系统和硬件信息库
+	implementation 'com.github.oshi:oshi-core:6.9.0'
+
+	//Excel导入导出
+	implementation 'com.alibaba:easyexcel:4.0.3'
+
+	//二维码生成
+	implementation 'com.google.zxing:core:3.5.3'
+
+	//Zlm4j
+	implementation 'com.aizuda:zlm4j:1.7.1'
+	implementation 'net.java.dev.jna:jna:5.14.0'
+
+	//JavaCV相关依赖
+	implementation 'org.bytedeco:javacv:1.5.10'
+	implementation 'org.bytedeco:ffmpeg:6.1.1-1.5.10:windows-x86_64-gpl'
+	implementation 'org.bytedeco:ffmpeg:6.1.1-1.5.10:linux-x86_64-gpl'
+}
+
+bootJar {
+	archiveFileName  = 'bemiot.jar'
+}
+
+tasks.withType(JavaCompile).configureEach {
+	options.compilerArgs << "-parameters"
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
