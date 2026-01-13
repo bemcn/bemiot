@@ -1,0 +1,559 @@
+2025-11-03 08:24:43.229 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 08:24:43.315 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 18552 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 08:24:43.316 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 08:24:43.401 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 08:24:43.402 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 08:24:44.867 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 08:24:44.873 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 08:24:44.904 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+2025-11-03 08:24:44.924 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 08:24:44.926 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 08:24:44.944 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 08:24:45.653 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 08:24:46.132 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 08:24:46.161 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 08:24:46.163 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2760 ms
+2025-11-03 08:24:46.425 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@5eefeab3, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 08:24:46.427 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 08:24:49.337 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@34e4a098
+2025-11-03 08:24:49.426 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 08:24:49.700 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6287a69a
+2025-11-03 08:24:49.703 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 08:24:50.029 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 08:24:50.141 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 08:24:50.160 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 08:24:50.177 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 08:24:50.220 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 08:24:50.676 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 08:24:50.691 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 8.102 seconds (process running for 36.055)
+2025-11-03 08:25:02.837 [XNIO-1 task-4] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 08:25:02.837 [XNIO-1 task-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 08:25:02.841 [XNIO-1 task-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-11-03 09:01:33.615 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 09:01:33.635 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 09:01:33.793 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 09:01:33.796 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 09:01:40.380 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 09:01:40.424 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 14064 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 09:01:40.425 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 09:01:40.476 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 09:01:40.477 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 09:01:41.469 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 09:01:41.470 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 09:01:41.496 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-11-03 09:01:41.511 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 09:01:41.512 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 09:01:41.527 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-11-03 09:01:42.052 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 09:01:42.371 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 09:01:42.403 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 09:01:42.405 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1927 ms
+2025-11-03 09:01:42.623 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@2a462b77, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 09:01:42.624 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 09:01:45.190 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@689b0513
+2025-11-03 09:01:45.278 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 09:01:45.510 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5dc6248c
+2025-11-03 09:01:45.512 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 09:01:45.822 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 09:01:45.909 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 09:01:45.929 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 09:01:45.941 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 09:01:46.005 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 09:01:46.540 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 09:01:46.552 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 6.601 seconds (process running for 8.106)
+2025-11-03 09:01:58.871 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 09:01:58.872 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 09:01:58.876 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-11-03 09:10:53.462 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 09:10:53.475 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 09:10:53.607 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 09:10:53.610 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 09:10:58.925 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 09:10:58.964 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 872 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 09:10:58.965 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 09:10:59.014 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 09:10:59.014 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 09:10:59.855 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 09:10:59.857 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 09:10:59.883 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2025-11-03 09:10:59.897 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 09:10:59.899 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 09:10:59.914 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 09:11:00.384 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 09:11:00.647 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 09:11:00.670 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 09:11:00.670 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1656 ms
+2025-11-03 09:11:00.827 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@4806df3f, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 09:11:00.829 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 09:11:02.998 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@280e2d59
+2025-11-03 09:11:03.073 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 09:11:03.250 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@626dc223
+2025-11-03 09:11:03.253 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 09:11:03.480 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 09:11:03.552 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 09:11:03.559 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 09:11:03.569 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 09:11:03.594 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 09:11:03.905 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 09:11:03.916 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 5.337 seconds (process running for 6.421)
+2025-11-03 09:12:39.375 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 09:12:39.375 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 09:12:39.379 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-11-03 10:09:43.005 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 10:09:43.011 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 10:09:43.160 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 10:09:43.163 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 10:09:50.860 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 10:09:50.916 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 2908 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 10:09:50.917 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 10:09:50.981 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 10:09:50.981 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 10:09:52.073 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 10:09:52.074 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 10:09:52.100 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-11-03 10:09:52.113 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 10:09:52.114 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 10:09:52.130 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 10:09:52.694 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 10:09:53.010 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 10:09:53.034 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 10:09:53.036 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2053 ms
+2025-11-03 10:09:53.254 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@53ee9840, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 10:09:53.256 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 10:09:55.403 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@689b0513
+2025-11-03 10:09:55.465 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 10:09:55.661 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@304d2eca
+2025-11-03 10:09:55.663 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 10:09:55.927 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 10:09:56.018 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 10:09:56.026 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 10:09:56.035 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 10:09:56.064 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 10:09:56.434 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 10:09:56.450 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 6.153 seconds (process running for 7.779)
+2025-11-03 10:10:07.484 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 10:10:07.484 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 10:10:07.486 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-03 10:48:50.455 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 10:48:50.468 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 10:48:50.611 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 10:48:50.615 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 10:51:03.385 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 10:51:03.425 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 19104 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 10:51:03.426 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 10:51:03.475 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 10:51:03.475 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 10:51:04.330 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 10:51:04.332 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 10:51:04.360 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2025-11-03 10:51:04.375 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 10:51:04.376 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 10:51:04.391 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 10:51:04.887 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 10:51:05.156 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 10:51:05.179 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 10:51:05.180 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1703 ms
+2025-11-03 10:51:05.339 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@59ffdc9d, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 10:51:05.340 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 10:51:07.417 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d18383b
+2025-11-03 10:51:07.484 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 10:51:07.682 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6caf4dd6
+2025-11-03 10:51:07.685 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 10:51:07.904 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 10:51:07.971 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 10:51:07.980 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 10:51:07.987 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 10:51:08.013 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 10:51:08.321 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 10:51:08.332 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 5.306 seconds (process running for 6.446)
+2025-11-03 10:51:10.938 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 10:51:10.939 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 10:51:10.944 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-11-03 11:26:59.864 [XNIO-1 task-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+2025-11-03 12:08:37.851 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 12:08:37.865 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 12:08:37.996 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 12:08:37.998 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 12:08:44.249 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 12:08:44.290 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 15028 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 12:08:44.291 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 12:08:44.344 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 12:08:44.344 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 12:08:45.265 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 12:08:45.266 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 12:08:45.299 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 JDBC repository interfaces.
+2025-11-03 12:08:45.315 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 12:08:45.316 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 12:08:45.332 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 12:08:45.826 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 12:08:46.094 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 12:08:46.119 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 12:08:46.120 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1775 ms
+2025-11-03 12:08:46.298 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@6569d90, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 12:08:46.300 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 12:08:48.773 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43fa0723
+2025-11-03 12:08:48.838 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 12:08:49.044 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2645a923
+2025-11-03 12:08:49.047 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 12:08:49.321 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 12:08:49.387 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 12:08:49.395 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 12:08:49.403 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 12:08:49.428 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 12:08:49.750 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 12:08:49.762 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 5.896 seconds (process running for 7.067)
+2025-11-03 12:12:12.753 [XNIO-1 task-3] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 12:12:12.753 [XNIO-1 task-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 12:12:12.758 [XNIO-1 task-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-11-03 12:20:22.316 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 12:20:22.329 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 12:20:22.471 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 12:20:22.474 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 12:20:27.773 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 12:20:27.809 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 17604 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 12:20:27.810 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 12:20:27.857 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 12:20:27.857 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 12:20:28.691 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 12:20:28.692 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 12:20:28.723 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 JDBC repository interfaces.
+2025-11-03 12:20:28.735 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 12:20:28.736 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 12:20:28.750 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 12:20:29.205 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 12:20:29.466 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 12:20:29.489 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 12:20:29.490 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1632 ms
+2025-11-03 12:20:29.645 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@4aff90f8, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 12:20:29.647 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 12:20:31.743 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43fa0723
+2025-11-03 12:20:31.807 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 12:20:31.979 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@44ef7b37
+2025-11-03 12:20:31.981 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 12:20:32.205 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 12:20:32.279 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 12:20:32.287 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 12:20:32.296 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 12:20:32.322 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 12:20:32.616 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 12:20:32.629 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 5.223 seconds (process running for 6.359)
+2025-11-03 12:20:41.498 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 12:20:41.498 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 12:20:41.502 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-11-03 12:33:15.738 [XNIO-1 task-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-11-03 14:14:03.157 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 14:14:03.186 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 14:14:03.330 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 14:14:03.334 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 14:14:11.127 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 14:14:11.167 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 10468 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 14:14:11.168 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 14:14:11.215 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 14:14:11.215 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 14:14:12.219 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 14:14:12.221 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 14:14:12.247 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-11-03 14:14:12.261 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 14:14:12.262 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 14:14:12.276 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 14:14:12.806 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 14:14:13.124 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 14:14:13.150 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 14:14:13.151 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1935 ms
+2025-11-03 14:14:13.362 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@260f1744, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 14:14:13.365 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 14:14:15.811 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ffba3a1
+2025-11-03 14:14:15.896 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 14:14:16.113 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4cd08f6a
+2025-11-03 14:14:16.115 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 14:14:16.370 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 14:14:16.444 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 14:14:16.453 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 14:14:16.461 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 14:14:16.489 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 14:14:16.834 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 14:14:16.847 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 6.149 seconds (process running for 7.6)
+2025-11-03 14:14:38.529 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 14:14:38.529 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 14:14:38.531 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-03 14:39:52.815 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 14:39:52.831 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 14:39:52.959 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 14:39:52.963 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 14:40:00.050 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 14:40:00.092 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 6228 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 14:40:00.094 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 14:40:00.148 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 14:40:00.148 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 14:40:01.092 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 14:40:01.094 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 14:40:01.125 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2025-11-03 14:40:01.141 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 14:40:01.142 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 14:40:01.158 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 14:40:01.726 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 14:40:02.019 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 14:40:02.046 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 14:40:02.046 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1898 ms
+2025-11-03 14:40:02.226 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@118dd82c, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 14:40:02.229 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 14:40:04.702 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ff8009d
+2025-11-03 14:40:04.779 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 14:40:04.978 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25ba2647
+2025-11-03 14:40:04.980 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 14:40:05.273 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 14:40:05.343 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 14:40:05.352 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 14:40:05.360 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 14:40:05.390 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 14:40:05.747 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 14:40:05.756 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 6.12 seconds (process running for 7.304)
+2025-11-03 14:40:28.983 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 14:40:28.983 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 14:40:28.985 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-03 17:19:11.515 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 17:19:11.520 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 17:19:11.678 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 17:19:11.682 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 17:19:19.009 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 17:19:19.060 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 11776 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 17:19:19.062 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 17:19:19.125 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 17:19:19.125 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 17:19:20.160 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:19:20.162 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 17:19:20.189 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2025-11-03 17:19:20.203 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:19:20.204 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 17:19:20.220 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-11-03 17:19:20.775 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 17:19:21.095 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 17:19:21.123 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 17:19:21.124 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1997 ms
+2025-11-03 17:19:21.362 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@60da39e9, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 17:19:21.363 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 17:19:23.734 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@689b0513
+2025-11-03 17:19:23.800 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 17:19:24.147 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@196e5637
+2025-11-03 17:19:24.150 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 17:19:24.409 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 17:19:24.493 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 17:19:24.502 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 17:19:24.511 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 17:19:24.551 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 17:19:24.891 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 17:19:24.900 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 6.338 seconds (process running for 7.907)
+2025-11-03 17:24:16.875 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 17:24:16.875 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 17:24:16.877 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-03 17:30:53.374 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 17:30:53.388 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 17:30:53.516 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 17:30:53.525 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 17:31:01.528 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 17:31:01.570 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 13504 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 17:31:01.571 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 17:31:01.628 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 17:31:01.629 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 17:31:02.536 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:31:02.538 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 17:31:02.564 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2025-11-03 17:31:02.579 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:31:02.580 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 17:31:02.594 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 17:31:03.222 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 17:31:03.599 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 17:31:03.636 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 17:31:03.637 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2007 ms
+2025-11-03 17:31:03.812 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@1c83635, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 17:31:03.814 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 17:31:06.133 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ff8009d
+2025-11-03 17:31:06.211 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 17:31:06.405 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ccbaa79
+2025-11-03 17:31:06.407 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 17:31:06.666 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 17:31:06.747 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 17:31:06.756 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 17:31:06.765 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 17:31:06.822 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 17:31:07.220 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 17:31:07.233 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 6.119 seconds (process running for 7.384)
+2025-11-03 17:31:24.341 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 17:31:24.393 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 17:31:24.396 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 17:31:31.579 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 17:31:31.645 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 17064 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 17:31:31.646 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 17:31:31.730 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 17:31:31.730 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 17:31:32.768 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:31:32.770 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 17:31:32.816 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+2025-11-03 17:31:32.834 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:31:32.835 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 17:31:32.853 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 17:31:33.451 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 17:31:33.763 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 17:31:33.788 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 17:31:33.790 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2058 ms
+2025-11-03 17:31:34.040 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@1c33e84e, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 17:31:34.042 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 17:31:36.621 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@689b0513
+2025-11-03 17:31:36.724 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 17:31:36.950 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@19e2c7bd
+2025-11-03 17:31:36.953 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 17:31:37.232 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 17:31:37.322 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 17:31:37.331 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 17:31:37.340 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 17:31:37.371 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 17:31:37.733 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 17:31:37.745 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 6.589 seconds (process running for 8.027)
+2025-11-03 17:31:37.994 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 17:31:37.995 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 17:31:37.996 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-03 17:34:01.211 [XNIO-1 task-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-11-03 17:40:32.678 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 17:40:32.693 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 17:40:32.862 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 17:40:32.868 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 17:40:41.231 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 17:40:41.262 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 4168 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 17:40:41.263 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 17:40:41.302 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 17:40:41.302 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 17:40:42.049 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:40:42.051 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 17:40:42.074 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2025-11-03 17:40:42.087 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:40:42.088 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 17:40:42.102 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 17:40:42.512 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 17:40:42.748 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 17:40:42.765 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 17:40:42.766 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1464 ms
+2025-11-03 17:40:42.918 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@5158ac60, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 17:40:42.919 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 17:40:44.840 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@34ca63f4
+2025-11-03 17:40:44.913 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 17:40:45.099 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4e96907
+2025-11-03 17:40:45.101 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 17:40:45.326 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 17:40:45.399 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 17:40:45.408 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 17:40:45.416 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 17:40:45.441 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 17:40:45.783 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 17:40:45.796 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 4.897 seconds (process running for 6.02)
+2025-11-03 17:40:50.020 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 17:40:50.020 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 17:40:50.021 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-03 17:41:10.856 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 17:41:10.869 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 17:41:10.996 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 17:41:10.999 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 17:41:17.729 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 17:41:17.768 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 14768 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 17:41:17.769 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 17:41:17.817 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 17:41:17.817 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 17:41:18.655 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:41:18.656 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 17:41:18.683 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2025-11-03 17:41:18.696 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:41:18.697 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 17:41:18.712 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 17:41:19.175 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 17:41:19.426 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 17:41:19.448 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 17:41:19.449 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1630 ms
+2025-11-03 17:41:19.618 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@c8fa081, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 17:41:19.619 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 17:41:21.891 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@689b0513
+2025-11-03 17:41:21.989 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 17:41:22.209 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f780df5
+2025-11-03 17:41:22.211 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 17:41:22.446 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 17:41:22.513 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 17:41:22.521 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 17:41:22.529 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 17:41:22.555 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 17:41:22.869 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 17:41:22.878 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 5.508 seconds (process running for 6.789)
+2025-11-03 17:41:48.525 [XNIO-1 task-3] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 17:41:48.526 [XNIO-1 task-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 17:41:48.529 [XNIO-1 task-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-11-03 17:50:53.064 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 17:50:53.076 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 17:50:53.219 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 17:50:53.221 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 17:51:00.044 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 17:51:00.081 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 11544 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 17:51:00.082 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 17:51:00.126 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 17:51:00.126 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 17:51:00.968 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:51:00.970 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 17:51:00.998 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+2025-11-03 17:51:01.012 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:51:01.013 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 17:51:01.028 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 17:51:01.484 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 17:51:01.743 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 17:51:01.762 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 17:51:01.763 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1636 ms
+2025-11-03 17:51:01.933 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@147ac926, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 17:51:01.934 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 17:51:04.007 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@689b0513
+2025-11-03 17:51:04.069 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 17:51:04.254 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f1f05d8
+2025-11-03 17:51:04.257 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 17:51:04.481 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 17:51:04.548 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 17:51:04.557 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 17:51:04.564 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 17:51:04.589 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 17:51:04.898 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 17:51:04.909 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 5.237 seconds (process running for 6.508)
+2025-11-03 17:51:09.652 [XNIO-1 task-3] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 17:51:09.653 [XNIO-1 task-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 17:51:09.656 [XNIO-1 task-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-03 17:52:01.324 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 17:52:01.336 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 17:52:01.486 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 17:52:01.489 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 17:53:18.937 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-03 17:53:18.985 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 16416 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-11-03 17:53:18.986 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-11-03 17:53:19.046 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-03 17:53:19.046 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-03 17:53:20.113 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:53:20.115 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-03 17:53:20.143 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2025-11-03 17:53:20.156 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-03 17:53:20.157 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-03 17:53:20.173 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-03 17:53:20.682 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-11-03 17:53:20.984 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-11-03 17:53:21.008 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-11-03 17:53:21.009 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1961 ms
+2025-11-03 17:53:21.215 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@23aa05f4, overflow=true, maxLimit=null, dbType=POSTGRE_SQL, dialect=null, optimizeJoin=true)]}'
+2025-11-03 17:53:21.217 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-11-03 17:53:23.771 [restartedMain] INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@689b0513
+2025-11-03 17:53:23.870 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 17:53:24.121 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49e103a0
+2025-11-03 17:53:24.124 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 17:53:24.454 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-03 17:53:24.550 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-11-03 17:53:24.559 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-11-03 17:53:24.569 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-11-03 17:53:24.600 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-11-03 17:53:25.029 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-11-03 17:53:25.042 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 6.669 seconds (process running for 8.278)
+2025-11-03 17:53:25.268 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 17:53:25.268 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 17:53:25.270 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-03 17:54:43.301 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-11-03 17:54:43.317 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-03 17:54:43.473 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 17:54:43.478 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

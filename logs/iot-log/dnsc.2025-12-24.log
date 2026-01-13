@@ -1,0 +1,1047 @@
+2025-12-24 08:40:37.308 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:40:37.516 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:40:37.829 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:40:38.253 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:40:38.298 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 19408 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:40:38.300 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:40:39.771 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:40:39.775 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:40:39.823 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:40:39.848 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:40:39.850 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:40:39.878 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:40:40.751 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:40:40.996 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@748904e8'
+2025-12-24 08:40:40.999 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:40:43.960 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:40:43.962 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:40:43.963 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:40:43.965 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:40:43.965 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:40:45.129 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:40:45.572 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12dc702b
+2025-12-24 08:40:45.575 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:40:45.960 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 8.151 seconds (process running for 10.802)
+2025-12-24 08:40:45.966 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:40:45.967 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:40:47.272 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:40:47.931 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@31ecb361
+2025-12-24 08:40:47.931 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:40:48.218 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:40:48.220 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:40:48.223 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:40:48.238 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:40:48.240 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:44:15.336 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:44:15.516 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:44:15.820 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:44:16.246 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:44:16.277 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 1264 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:44:16.279 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:44:17.578 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:44:17.581 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:44:17.626 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:44:17.648 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:44:17.648 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:44:17.670 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:44:18.421 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:44:18.631 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@54a056e4'
+2025-12-24 08:44:18.634 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:44:21.319 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:44:21.321 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:44:21.322 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:44:21.324 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:44:21.324 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:44:22.489 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:44:22.882 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d6a0962
+2025-12-24 08:44:22.885 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:44:23.242 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.446 seconds (process running for 9.757)
+2025-12-24 08:44:23.248 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:44:23.249 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:44:24.443 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:44:24.938 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@3c070ade
+2025-12-24 08:44:24.939 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:44:25.037 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:44:25.039 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:44:25.042 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:44:25.055 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:44:25.063 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:46:20.662 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:46:20.826 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:46:21.076 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:46:21.470 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:46:21.505 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 3136 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:46:21.506 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:46:22.757 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:46:22.759 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:46:22.799 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:46:22.821 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:46:22.823 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:46:22.849 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:46:23.595 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:46:23.790 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@748904e8'
+2025-12-24 08:46:23.792 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:46:26.365 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:46:26.366 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:46:26.367 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:46:26.369 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:46:26.369 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:46:27.489 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:46:27.881 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12dc702b
+2025-12-24 08:46:27.884 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:46:28.281 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.224 seconds (process running for 9.278)
+2025-12-24 08:46:28.286 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:46:28.287 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:46:29.407 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:46:29.869 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@69fa5536
+2025-12-24 08:46:29.869 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:46:29.980 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:46:29.982 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:46:29.994 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:46:30.006 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:46:30.009 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:47:14.728 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:47:14.893 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:47:15.153 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:47:15.541 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:47:15.577 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 15212 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:47:15.578 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:47:16.827 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:47:16.830 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:47:16.868 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:47:16.888 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:47:16.890 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:47:16.914 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:47:17.622 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:47:17.819 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@54a056e4'
+2025-12-24 08:47:17.821 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:47:20.452 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:47:20.453 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:47:20.455 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:47:20.457 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:47:20.457 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:47:21.543 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:47:21.828 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@488b46da
+2025-12-24 08:47:21.831 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:47:22.155 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.02 seconds (process running for 9.017)
+2025-12-24 08:47:22.160 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:47:22.161 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:47:23.316 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:47:23.755 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@13f255ed
+2025-12-24 08:47:23.755 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:47:23.869 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:47:23.871 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:47:23.874 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:47:23.898 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:47:23.902 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:48:57.159 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:48:57.321 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:48:57.587 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:48:58.016 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:48:58.051 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 19208 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:48:58.053 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:48:59.294 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:48:59.296 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:48:59.334 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:48:59.355 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:48:59.356 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:48:59.379 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:49:00.093 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:49:00.302 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@4fbaa7f5'
+2025-12-24 08:49:00.305 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:49:03.182 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:49:03.183 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:49:03.184 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:49:03.187 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:49:03.187 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:49:04.291 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:49:04.585 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e9671e6
+2025-12-24 08:49:04.588 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:49:04.936 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.37 seconds (process running for 9.379)
+2025-12-24 08:49:04.941 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:49:04.942 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:49:06.195 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:49:06.642 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@4fbdee7a
+2025-12-24 08:49:06.642 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:49:06.904 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:49:06.906 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:49:06.909 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:49:06.925 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:49:06.928 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:49:28.100 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:49:28.270 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:49:28.527 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:49:28.928 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:49:28.967 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 18420 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:49:28.969 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:49:30.217 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:49:30.219 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:49:30.266 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:49:30.287 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:49:30.289 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:49:30.311 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:49:31.026 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:49:31.241 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@538b3c88'
+2025-12-24 08:49:31.243 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:49:38.479 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:49:38.481 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:49:38.483 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:49:38.486 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:49:38.486 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:49:39.604 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:49:39.979 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66859ea9
+2025-12-24 08:49:39.983 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:49:40.306 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 11.802 seconds (process running for 13.816)
+2025-12-24 08:49:40.327 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:49:40.328 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:49:41.593 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:49:42.067 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@12921ee1
+2025-12-24 08:49:42.068 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:49:42.185 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:49:42.186 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:49:42.199 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:49:42.212 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:49:42.217 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:50:00.884 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:50:01.043 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:50:01.294 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:50:01.682 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:50:01.714 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 11132 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:50:01.716 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:50:02.980 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:50:02.983 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:50:03.030 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:50:03.052 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:50:03.054 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:50:03.075 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:50:03.783 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:50:03.998 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@1a717d79'
+2025-12-24 08:50:04.001 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:50:06.645 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:50:06.647 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:50:06.648 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:50:06.651 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:50:06.651 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:50:07.765 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:50:08.046 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e777b0
+2025-12-24 08:50:08.049 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:50:08.338 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.064 seconds (process running for 9.109)
+2025-12-24 08:50:08.343 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:50:08.344 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:50:09.569 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:50:09.983 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@54644470
+2025-12-24 08:50:09.984 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:50:10.102 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:50:10.104 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:50:10.112 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:50:10.126 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:50:10.132 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:50:54.291 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:50:54.457 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:50:54.707 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:50:55.066 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:50:55.096 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 4268 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:50:55.097 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:50:56.303 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:50:56.305 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:50:56.347 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:50:56.367 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:50:56.369 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:50:56.390 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:50:57.092 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:50:57.291 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@748904e8'
+2025-12-24 08:50:57.295 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:50:59.909 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:50:59.910 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:50:59.912 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:50:59.914 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:50:59.914 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:51:01.055 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:51:01.339 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@41b2123e
+2025-12-24 08:51:01.341 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:51:01.657 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 6.968 seconds (process running for 8.94)
+2025-12-24 08:51:01.662 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:51:01.663 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:51:02.808 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:51:03.256 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@17e725fb
+2025-12-24 08:51:03.257 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:51:03.369 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:51:03.371 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:51:03.376 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:51:03.388 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:51:03.393 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:51:18.881 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:51:19.052 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:51:19.313 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:51:19.684 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:51:19.713 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 19520 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:51:19.714 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:51:20.929 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:51:20.931 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:51:20.969 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:51:20.991 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:51:20.994 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:51:21.014 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:51:21.689 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:51:21.890 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@54a056e4'
+2025-12-24 08:51:21.893 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:51:24.614 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:51:24.616 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:51:24.617 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:51:24.620 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:51:24.620 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:51:25.691 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:51:25.985 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@515d615
+2025-12-24 08:51:25.989 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:51:26.359 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.064 seconds (process running for 9.068)
+2025-12-24 08:51:26.365 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:51:26.367 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:51:27.525 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:51:27.961 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@369d624d
+2025-12-24 08:51:27.962 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:51:28.069 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:51:28.071 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:51:28.073 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:51:28.087 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:51:28.093 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:51:40.806 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:51:40.965 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:51:41.224 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:51:41.642 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:51:41.670 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 8720 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:51:41.672 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:51:42.971 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:51:42.973 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:51:43.015 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:51:43.038 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:51:43.041 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:51:43.067 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:51:43.776 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:51:43.976 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@3b3056a6'
+2025-12-24 08:51:43.979 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:51:46.629 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:51:46.631 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:51:46.632 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:51:46.634 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:51:46.635 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:51:47.774 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:51:48.139 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e9671e6
+2025-12-24 08:51:48.142 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:51:48.453 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.247 seconds (process running for 9.23)
+2025-12-24 08:51:48.458 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:51:48.459 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:51:49.708 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:51:50.170 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@77350382
+2025-12-24 08:51:50.171 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:51:50.295 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:51:50.297 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:51:50.311 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:51:50.324 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:51:50.330 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:52:50.667 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:52:50.839 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:52:51.129 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:52:51.547 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:52:51.586 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 13600 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:52:51.587 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:52:53.002 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:52:53.004 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:52:53.044 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:52:53.067 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:52:53.069 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:52:53.095 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:52:53.848 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:52:54.050 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@4fbaa7f5'
+2025-12-24 08:52:54.053 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:52:56.645 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:52:56.647 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:52:56.648 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:52:56.650 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:52:56.650 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:52:57.751 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:52:58.023 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e9671e6
+2025-12-24 08:52:58.027 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:52:58.385 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.28 seconds (process running for 9.644)
+2025-12-24 08:52:58.390 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:52:58.391 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:52:59.609 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:53:00.061 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@4fbdee7a
+2025-12-24 08:53:00.062 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:53:00.171 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:53:00.173 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:53:00.175 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:53:00.188 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:53:00.192 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:53:19.365 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:53:19.532 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:53:19.779 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:53:20.166 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:53:20.198 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 11364 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:53:20.199 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:53:21.439 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:53:21.441 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:53:21.482 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:53:21.503 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:53:21.505 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:53:21.526 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:53:22.259 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:53:22.456 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@1a717d79'
+2025-12-24 08:53:22.459 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:53:25.116 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:53:25.118 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:53:25.119 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:53:25.122 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:53:25.122 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:53:26.262 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:53:26.535 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@488b46da
+2025-12-24 08:53:26.539 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:53:26.893 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.132 seconds (process running for 9.097)
+2025-12-24 08:53:26.898 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:53:26.899 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:53:28.114 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:53:28.555 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@54644470
+2025-12-24 08:53:28.556 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:53:28.691 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:53:28.693 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:53:28.697 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:53:28.710 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:53:28.716 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 08:55:04.059 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 08:55:04.224 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 08:55:04.482 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 08:55:04.876 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 08:55:04.914 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 19372 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 08:55:04.916 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 08:55:06.179 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:55:06.181 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 08:55:06.222 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2025-12-24 08:55:06.243 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 08:55:06.244 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 08:55:06.265 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-12-24 08:55:06.972 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 08:55:07.204 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@10e56da9'
+2025-12-24 08:55:07.207 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 08:55:10.038 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 08:55:10.040 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 08:55:10.041 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 08:55:10.043 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 08:55:10.043 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 08:55:11.129 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 08:55:11.539 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@320efff5
+2025-12-24 08:55:11.542 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 08:55:11.862 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.4 seconds (process running for 9.418)
+2025-12-24 08:55:11.866 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 08:55:11.867 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 08:55:13.145 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 08:55:13.584 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@29390110
+2025-12-24 08:55:13.585 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 08:55:13.717 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 08:55:13.719 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 08:55:13.736 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 08:55:13.749 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 08:55:13.754 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 09:30:46.052 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 09:30:46.140 [restartedMain] INFO  org.bem.iot.BemiotApplication - Starting BemiotApplication using Java 17.0.15 with PID 9168 (D:\www\AIOT\bemiot\bemiot\out\production\classes started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 09:30:46.141 [restartedMain] INFO  org.bem.iot.BemiotApplication - The following 1 profile is active: "dev"
+2025-12-24 09:30:46.227 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\javacv\1.5.10\javacv-1.5.10.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/javacpp.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/openblas.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/opencv.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/ffmpeg.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/flycapture.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/libdc1394.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/libfreenect.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/libfreenect2.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/librealsense.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/librealsense2.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/videoinput.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/artoolkitplus.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/flandmark.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/leptonica.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/tesseract.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/javacpp-1.5.10.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/openblas-0.3.26-1.5.10.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/opencv-4.9.0-1.5.10.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/ffmpeg-6.1.1-1.5.10.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/flycapture-2.13.3.31-1.5.9.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/libdc1394-2.2.6-1.5.9.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/libfreenect-0.5.7-1.5.9.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/libfreenect2-0.2.0-1.5.9.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/librealsense-1.12.4-1.5.9.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/librealsense2-2.53.1-1.5.9.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/videoinput-0.200-1.5.9.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/artoolkitplus-2.3.1-1.5.9.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/leptonica-1.84.1-1.5.10.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/tesseract-5.3.4-1.5.10.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/android-4.1.1.4.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-main-2.3.2.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2-natives-android-aarch64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2-natives-android-armv6.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2-natives-linux-amd64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2-natives-linux-armv6.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2-natives-linux-armv6hf.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2-natives-linux-i586.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2-natives-macosx-universal.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2-natives-solaris-amd64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2-natives-solaris-i586.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2-natives-windows-amd64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/gluegen-rt-2.3.2-natives-windows-i586.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-main-2.3.2.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2-natives-android-aarch64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2-natives-android-armv6.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2-natives-linux-amd64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2-natives-linux-armv6.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2-natives-linux-armv6hf.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2-natives-linux-i586.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2-natives-macosx-universal.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2-natives-solaris-amd64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2-natives-solaris-i586.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2-natives-windows-amd64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jogl-all-2.3.2-natives-windows-i586.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-main-2.3.2.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2-natives-android-aarch64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2-natives-android-armv6.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2-natives-linux-amd64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2-natives-linux-armv6.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2-natives-linux-armv6hf.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2-natives-linux-i586.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2-natives-macosx-universal.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2-natives-solaris-amd64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2-natives-solaris-i586.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2-natives-windows-amd64.jar,file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/javacv/1.5.10/jocl-2.3.2-natives-windows-i586.jar
+2025-12-24 09:30:46.227 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\ffmpeg\6.1.1-1.5.10\ffmpeg-6.1.1-1.5.10.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/ffmpeg/6.1.1-1.5.10/javacpp.jar
+2025-12-24 09:30:46.228 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\opencv\4.9.0-1.5.10\opencv-4.9.0-1.5.10.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/opencv/4.9.0-1.5.10/javacpp.jar
+2025-12-24 09:30:46.228 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\openblas\0.3.26-1.5.10\openblas-0.3.26-1.5.10.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/openblas/0.3.26-1.5.10/javacpp.jar
+2025-12-24 09:30:46.228 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\flycapture\2.13.3.31-1.5.9\flycapture-2.13.3.31-1.5.9.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/flycapture/2.13.3.31-1.5.9/javacpp.jar
+2025-12-24 09:30:46.228 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\libdc1394\2.2.6-1.5.9\libdc1394-2.2.6-1.5.9.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/libdc1394/2.2.6-1.5.9/javacpp.jar
+2025-12-24 09:30:46.228 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\libfreenect\0.5.7-1.5.9\libfreenect-0.5.7-1.5.9.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/libfreenect/0.5.7-1.5.9/javacpp.jar
+2025-12-24 09:30:46.229 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\libfreenect2\0.2.0-1.5.9\libfreenect2-0.2.0-1.5.9.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/libfreenect2/0.2.0-1.5.9/javacpp.jar
+2025-12-24 09:30:46.229 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\librealsense\1.12.4-1.5.9\librealsense-1.12.4-1.5.9.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/librealsense/1.12.4-1.5.9/javacpp.jar
+2025-12-24 09:30:46.229 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\librealsense2\2.53.1-1.5.9\librealsense2-2.53.1-1.5.9.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/librealsense2/2.53.1-1.5.9/javacpp.jar
+2025-12-24 09:30:46.229 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\videoinput\0.200-1.5.9\videoinput-0.200-1.5.9.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/videoinput/0.200-1.5.9/javacpp.jar
+2025-12-24 09:30:46.229 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\artoolkitplus\2.3.1-1.5.9\artoolkitplus-2.3.1-1.5.9.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/artoolkitplus/2.3.1-1.5.9/javacpp.jar
+2025-12-24 09:30:46.229 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\tesseract\5.3.4-1.5.10\tesseract-5.3.4-1.5.10.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/tesseract/5.3.4-1.5.10/javacpp.jar
+2025-12-24 09:30:46.229 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\bemjsy\.m2\repository\org\bytedeco\leptonica\1.84.1-1.5.10\leptonica-1.84.1-1.5.10.jar referenced one or more files that do not exist: file:/C:/Users/bemjsy/.m2/repository/org/bytedeco/leptonica/1.84.1-1.5.10/javacpp.jar
+2025-12-24 09:30:46.229 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-24 09:30:46.230 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-24 09:30:48.152 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 09:30:48.157 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 09:30:48.211 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 0 JDBC repository interfaces.
+2025-12-24 09:30:48.238 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 09:30:48.242 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 09:30:48.270 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-12-24 09:30:49.220 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 09:30:49.706 [restartedMain] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-12-24 09:30:49.755 [restartedMain] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-12-24 09:30:49.758 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3526 ms
+2025-12-24 09:30:50.091 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@7a7374e7'
+2025-12-24 09:30:50.095 [restartedMain] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 09:30:53.205 [restartedMain] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 09:30:53.207 [restartedMain] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 09:30:53.208 [restartedMain] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 09:30:53.214 [restartedMain] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 09:30:53.214 [restartedMain] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 09:30:54.502 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 09:30:54.851 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17585e47
+2025-12-24 09:30:54.855 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 09:30:55.329 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-24 09:30:55.414 [restartedMain] INFO  io.undertow - starting server: Undertow - 2.3.12.Final
+2025-12-24 09:30:55.438 [restartedMain] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-12-24 09:30:55.457 [restartedMain] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-12-24 09:30:55.525 [restartedMain] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-12-24 09:30:56.201 [restartedMain] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer - Undertow started on port 8010 (http)
+2025-12-24 09:30:56.222 [restartedMain] INFO  org.bem.iot.BemiotApplication - Started BemiotApplication in 10.921 seconds (process running for 14.284)
+2025-12-24 09:30:56.228 [restartedMain] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 09:30:56.229 [restartedMain] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 09:31:01.710 [XNIO-1 task-2] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 09:31:01.710 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 09:31:01.715 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-12-24 09:31:30.181 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 09:31:30.498 [XNIO-1 task-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@96dc7c9
+2025-12-24 09:31:30.499 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 09:38:10.984 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.12.Final
+2025-12-24 09:38:11.006 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-12-24 09:38:11.137 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 09:38:11.139 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 09:38:11.140 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 09:38:11.148 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 09:38:11.150 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 09:38:48.555 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 09:38:48.717 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 09:38:48.984 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 09:38:49.380 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 09:38:49.417 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 13240 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 09:38:49.418 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 09:38:50.700 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 09:38:50.702 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 09:38:50.739 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 JDBC repository interfaces.
+2025-12-24 09:38:50.759 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 09:38:50.761 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 09:38:50.783 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-12-24 09:38:51.490 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 09:38:51.696 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@4b476233'
+2025-12-24 09:38:51.698 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 09:38:54.312 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 09:38:54.313 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 09:38:54.315 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 09:38:54.318 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 09:38:54.318 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 09:38:55.437 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 09:38:55.729 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ec8db0c
+2025-12-24 09:38:55.733 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 09:38:56.056 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.097 seconds (process running for 9.159)
+2025-12-24 09:38:56.061 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 09:38:56.062 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 09:38:57.387 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 09:38:57.860 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@76379796
+2025-12-24 09:38:57.860 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 09:38:57.970 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 09:38:57.972 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 09:38:57.986 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 09:38:58.000 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 09:38:58.005 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:09:01.820 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:09:01.987 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:09:02.257 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:09:02.666 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:09:02.705 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 20520 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:09:02.707 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:09:03.969 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:09:03.970 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:09:04.010 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:09:04.033 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:09:04.035 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:09:04.058 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:09:04.848 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:09:05.045 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@19b9f903'
+2025-12-24 10:09:05.047 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:09:07.725 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:09:07.727 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:09:07.728 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:09:07.730 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:09:07.731 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:09:08.878 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:09:09.274 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12dc702b
+2025-12-24 10:09:09.277 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:09:09.635 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.4 seconds (process running for 9.438)
+2025-12-24 10:09:09.641 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:09:09.642 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:09:10.933 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:09:11.449 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@17e725fb
+2025-12-24 10:09:11.449 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:09:11.573 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:09:11.576 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:09:11.584 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:09:11.599 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:09:11.605 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:15:47.972 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:15:48.204 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:15:48.510 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:15:48.936 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:15:48.970 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 19832 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:15:48.972 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:15:50.227 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:15:50.229 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:15:50.272 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:15:50.294 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:15:50.296 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:15:50.318 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:15:51.052 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:15:51.266 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@1a717d79'
+2025-12-24 10:15:51.268 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:15:53.913 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:15:53.915 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:15:53.916 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:15:53.918 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:15:53.918 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:15:55.038 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:15:55.319 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5552d10
+2025-12-24 10:15:55.323 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:15:55.707 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.217 seconds (process running for 9.397)
+2025-12-24 10:15:55.713 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:15:55.714 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:15:56.877 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:15:57.318 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@40dd2cfe
+2025-12-24 10:15:57.318 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:15:57.610 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:15:57.612 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:15:57.615 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:15:57.627 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:15:57.630 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:17:21.017 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:17:21.233 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:17:21.516 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:17:21.948 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:17:21.981 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 22064 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:17:21.983 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:17:23.227 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:17:23.228 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:17:23.270 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:17:23.289 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:17:23.291 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:17:23.314 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:17:24.037 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:17:24.242 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@51ed2f68'
+2025-12-24 10:17:24.245 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:17:26.846 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:17:26.847 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:17:26.849 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:17:26.851 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:17:26.852 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:17:27.963 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:17:28.241 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@320efff5
+2025-12-24 10:17:28.245 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:17:28.590 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.095 seconds (process running for 9.262)
+2025-12-24 10:17:28.595 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:17:28.596 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:17:29.824 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:17:30.263 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@496e2bdd
+2025-12-24 10:17:30.264 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:17:30.538 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:17:30.540 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:17:30.543 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:17:30.557 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:17:30.563 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:23:05.567 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:23:05.740 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:23:06.000 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:23:06.359 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:23:06.392 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 11972 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:23:06.394 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:23:07.686 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:23:07.688 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:23:07.733 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:23:07.755 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:23:07.757 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:23:07.780 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:23:08.496 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:23:08.706 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@12cd129c'
+2025-12-24 10:23:08.710 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:23:11.473 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:23:11.475 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:23:11.476 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:23:11.479 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:23:11.479 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:23:12.599 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:23:12.997 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@219dd935
+2025-12-24 10:23:12.999 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:23:13.299 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.319 seconds (process running for 9.364)
+2025-12-24 10:23:13.304 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:23:13.305 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:23:14.490 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:23:14.925 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@c2ddfeb
+2025-12-24 10:23:14.926 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:23:15.038 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:23:15.040 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:23:15.045 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:23:15.060 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:23:15.063 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:24:08.748 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:24:08.914 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:24:09.178 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:24:09.581 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:24:09.616 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 7896 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:24:09.617 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:24:10.950 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:24:10.952 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:24:10.993 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:24:11.017 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:24:11.019 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:24:11.041 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:24:11.765 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:24:11.970 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@3b3056a6'
+2025-12-24 10:24:11.972 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:24:14.645 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:24:14.647 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:24:14.648 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:24:14.650 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:24:14.651 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:24:15.790 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:24:16.068 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22ee1ad7
+2025-12-24 10:24:16.071 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:24:16.378 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.219 seconds (process running for 9.305)
+2025-12-24 10:24:16.382 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:24:16.383 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:24:17.607 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:24:18.029 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@5482b32a
+2025-12-24 10:24:18.029 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:24:18.151 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:24:18.153 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:24:18.157 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:24:18.173 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:24:18.178 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:25:32.797 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:25:32.962 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:25:33.214 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:25:33.609 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:25:33.642 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 10688 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:25:33.644 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:25:34.911 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:25:34.914 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:25:34.959 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:25:34.981 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:25:34.984 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:25:35.007 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:25:35.720 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:25:35.918 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@4cb00fa5'
+2025-12-24 10:25:35.920 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:25:38.548 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:25:38.549 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:25:38.551 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:25:38.553 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:25:38.554 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:25:39.748 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:25:40.031 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@219dd935
+2025-12-24 10:25:40.035 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:25:40.430 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.235 seconds (process running for 9.212)
+2025-12-24 10:25:40.436 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:25:40.436 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:25:41.668 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:25:42.128 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@12921ee1
+2025-12-24 10:25:42.129 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:25:42.250 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:25:42.252 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:25:42.261 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:25:42.274 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:25:42.280 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:26:09.530 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:26:09.694 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:26:09.940 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:26:10.329 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:26:10.366 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 18524 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:26:10.367 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:26:11.592 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:26:11.594 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:26:11.632 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:26:11.654 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:26:11.655 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:26:11.679 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:26:12.397 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:26:12.581 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@10e56da9'
+2025-12-24 10:26:12.584 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:26:15.325 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:26:15.327 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:26:15.328 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:26:15.330 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:26:15.330 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:26:16.405 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:26:16.690 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ec8db0c
+2025-12-24 10:26:16.693 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:26:16.992 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.072 seconds (process running for 9.086)
+2025-12-24 10:26:16.996 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:26:16.997 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:26:18.217 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:26:18.632 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@2b9a7211
+2025-12-24 10:26:18.632 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:26:18.763 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:26:18.764 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:26:18.768 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:26:18.781 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:26:18.786 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:28:59.527 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:28:59.696 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:28:59.968 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:29:00.366 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:29:00.409 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 19296 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:29:00.411 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:29:01.693 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:29:01.696 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:29:01.737 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:29:01.759 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:29:01.761 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:29:01.784 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:29:02.472 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:29:02.675 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@78065fcd'
+2025-12-24 10:29:02.678 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:29:05.311 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:29:05.312 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:29:05.314 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:29:05.316 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:29:05.316 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:29:06.419 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:29:06.688 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12dc702b
+2025-12-24 10:29:06.691 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:29:07.006 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.063 seconds (process running for 9.061)
+2025-12-24 10:29:07.011 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:29:07.012 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:29:08.215 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:29:08.610 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@17e725fb
+2025-12-24 10:29:08.610 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:29:08.745 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:29:08.747 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:29:08.755 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:29:08.769 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:29:08.776 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:30:22.006 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:30:22.173 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:30:22.431 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:30:22.898 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:30:22.935 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 18284 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:30:22.936 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:30:24.188 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:30:24.190 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:30:24.242 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:30:24.262 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:30:24.264 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:30:24.290 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:30:25.006 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:30:25.197 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@748904e8'
+2025-12-24 10:30:25.199 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:30:27.817 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:30:27.818 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:30:27.820 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:30:27.822 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:30:27.822 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:30:28.970 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:30:29.345 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2f3a0f37
+2025-12-24 10:30:29.349 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:30:29.665 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.257 seconds (process running for 9.279)
+2025-12-24 10:30:29.670 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:30:29.670 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:30:30.971 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:30:31.447 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@2b9a7211
+2025-12-24 10:30:31.447 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:30:31.670 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:30:31.671 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:30:31.687 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:30:31.704 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:30:31.712 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:36:30.870 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:36:31.036 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:36:31.301 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:36:31.714 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:36:31.749 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 21856 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:36:31.751 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:36:33.028 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:36:33.031 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:36:33.074 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:36:33.097 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:36:33.099 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:36:33.122 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:36:33.865 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:36:34.075 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@19b9f903'
+2025-12-24 10:36:34.078 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:36:36.775 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:36:36.777 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:36:36.778 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:36:36.780 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:36:36.781 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:36:37.959 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:36:38.241 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@486bcaa
+2025-12-24 10:36:38.244 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:36:38.639 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.359 seconds (process running for 9.448)
+2025-12-24 10:36:38.643 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:36:38.644 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:36:39.896 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:36:40.407 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@4fbdee7a
+2025-12-24 10:36:40.407 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:36:40.547 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:36:40.549 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:36:40.554 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:36:40.567 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:36:40.571 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:37:12.382 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:37:12.545 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:37:12.810 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:37:13.290 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:37:13.329 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 12748 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:37:13.330 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:37:14.598 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:37:14.600 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:37:14.642 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:37:14.664 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:37:14.667 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:37:14.691 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:37:15.401 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:37:15.598 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@1a717d79'
+2025-12-24 10:37:15.600 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:37:18.241 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:37:18.242 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:37:18.244 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:37:18.246 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:37:18.246 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:37:19.407 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:37:19.798 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66859ea9
+2025-12-24 10:37:19.802 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:37:20.155 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.371 seconds (process running for 9.398)
+2025-12-24 10:37:20.161 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:37:20.162 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:37:21.391 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:37:21.896 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@12921ee1
+2025-12-24 10:37:21.896 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:37:22.060 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:37:22.062 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:37:22.065 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:37:22.079 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:37:22.082 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:37:38.557 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:37:38.728 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:37:38.998 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:37:39.399 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:37:39.439 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 18304 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:37:39.440 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:37:40.693 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:37:40.695 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:37:40.735 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:37:40.755 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:37:40.756 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:37:40.775 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:37:41.506 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:37:41.710 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@51ed2f68'
+2025-12-24 10:37:41.713 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:37:44.471 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:37:44.473 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:37:44.474 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:37:44.476 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:37:44.477 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:37:45.590 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:37:45.888 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@41b2123e
+2025-12-24 10:37:45.890 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:37:46.206 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.228 seconds (process running for 9.218)
+2025-12-24 10:37:46.211 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:37:46.211 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:37:47.427 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:37:47.845 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@76379796
+2025-12-24 10:37:47.845 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:37:48.123 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:37:48.125 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:37:48.129 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:37:48.146 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:37:48.151 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:40:45.865 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:40:46.033 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:40:46.297 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:40:46.694 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:40:46.729 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 11760 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:40:46.730 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:40:48.014 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:40:48.016 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:40:48.057 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:40:48.078 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:40:48.080 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:40:48.103 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:40:48.832 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:40:49.038 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@51ed2f68'
+2025-12-24 10:40:49.040 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:40:51.683 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:40:51.685 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:40:51.686 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:40:51.688 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:40:51.689 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:40:52.817 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:40:53.098 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@41b2123e
+2025-12-24 10:40:53.100 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:40:53.409 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.131 seconds (process running for 9.178)
+2025-12-24 10:40:53.414 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:40:53.414 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:40:54.649 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:40:55.146 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@29390110
+2025-12-24 10:40:55.146 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:40:55.253 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:40:55.255 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:40:55.268 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:40:55.281 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:40:55.286 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:43:25.284 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:43:25.455 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:43:25.715 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:43:26.081 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:43:26.107 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 9696 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:43:26.108 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:43:27.354 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:43:27.356 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:43:27.404 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:43:27.426 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:43:27.428 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:43:27.451 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:43:28.227 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:43:28.475 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@698d6d30'
+2025-12-24 10:43:28.478 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:43:31.141 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:43:31.143 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:43:31.144 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:43:31.146 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:43:31.146 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:43:32.242 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:43:32.511 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d15c513
+2025-12-24 10:43:32.513 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:43:32.822 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.125 seconds (process running for 9.128)
+2025-12-24 10:43:32.825 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:43:32.826 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:43:33.970 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:43:34.362 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@29390110
+2025-12-24 10:43:34.362 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:43:34.498 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:43:34.500 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:43:34.512 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:43:34.526 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:43:34.531 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:44:14.032 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.bem.iot.SqlTest]: SqlTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 10:44:14.200 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.bem.iot.BemiotApplication for test class org.bem.iot.SqlTest
+2025-12-24 10:44:14.459 [main] INFO  o.s.b.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+2025-12-24 10:44:14.849 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-24 10:44:14.885 [main] INFO  org.bem.iot.SqlTest - Starting SqlTest using Java 17.0.15 with PID 2404 (started by bemjsy in D:\www\AIOT\bemiot\bemiot)
+2025-12-24 10:44:14.887 [main] INFO  org.bem.iot.SqlTest - The following 1 profile is active: "dev"
+2025-12-24 10:44:16.164 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:44:16.166 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-12-24 10:44:16.209 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 JDBC repository interfaces.
+2025-12-24 10:44:16.229 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 10:44:16.231 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 10:44:16.255 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-12-24 10:44:16.978 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [org.bem.iot.config.RedisCacheConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [projectingArgumentResolverBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-12-24 10:44:17.177 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@748904e8'
+2025-12-24 10:44:17.179 [main] DEBUG c.b.m.e.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-12-24 10:44:19.792 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】HTTP流媒体服务启动：成功，端口：7080
+2025-12-24 10:44:19.794 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTSP流媒体服务启动：成功，端口：7554
+2025-12-24 10:44:19.795 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
+2025-12-24 10:44:19.798 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
+2025-12-24 10:44:19.798 [main] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
+2025-12-24 10:44:20.953 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:44:21.237 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5dd2ea0a
+2025-12-24 10:44:21.240 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:44:21.541 [main] INFO  org.bem.iot.SqlTest - Started SqlTest in 7.103 seconds (process running for 9.243)
+2025-12-24 10:44:21.548 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL start create  ...  
+2025-12-24 10:44:21.548 [main] DEBUG c.b.mybatisplus.autoconfigure.DdlApplicationRunner -   ...  DDL end create  ...  
+2025-12-24 10:44:22.748 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 10:44:23.219 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.taosdata.jdbc.rs.RestfulConnection@6bf2ecbb
+2025-12-24 10:44:23.219 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 10:44:23.373 [SpringApplicationShutdownHook] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】关闭所有流媒体服务
+2025-12-24 10:44:23.374 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 10:44:23.377 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 10:44:23.392 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:44:23.396 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
