@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import jakarta.annotation.Resource;
-import org.apache.ibatis.annotations.Param;
 import org.bem.iot.mapper.postgresql.DriveMapper;
 import org.bem.iot.mapper.postgresql.DriveParamsMapper;
 import org.bem.iot.mapper.postgresql.ProtocolsMapper;
