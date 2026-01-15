@@ -8,7 +8,9 @@ import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.Arrays;
@@ -48,6 +50,9 @@ public class MqttConfig {
     @Resource
     private TopicConfig topicConfig;
 
+    @Autowired
+    private ApplicationContext applicationContext;
+
     /**
      * 客户端对象
      */
@@ -57,6 +62,7 @@ public class MqttConfig {
      * 线程池用于处理消息
      */
     @Getter
+    @Autowired
     private ExecutorService messageProcessingExecutor;
 
     /**
@@ -74,11 +80,6 @@ public class MqttConfig {
      */
     @PostConstruct
     public void init() {
-        // 初始化消息处理线程池
-        this.messageProcessingExecutor = Executors.newFixedThreadPool(
-            Runtime.getRuntime().availableProcessors(),
-            r -> new Thread(r, "MQTT-Message-Processor-" + r.hashCode())
-        );
         this.connect();
     }
 
@@ -150,8 +151,10 @@ public class MqttConfig {
             options.setAutomaticReconnect(true);
             // 设置遗嘱消息主题，如果客户端和服务器之间的连接意外断开，服务器将发布客户端的遗嘱消息
             options.setWill("willTopic", (applicationName + " 与服务器断开连接").getBytes(), 0, false);
+            // 从Spring容器获取MqttMessageService实例，使用限定符指定特定的实现
+            MqttMessageService mqttMessageService = applicationContext.getBean("mqttMessageService", MqttMessageService.class);
             // 使用线程池设置回调
-            client.setCallback(new MqttCallBackExtended(this, messageProcessingExecutor));
+            client.setCallback(new MqttCallBackExtended(this, messageProcessingExecutor, mqttMessageService));
             // 连接
             client.connect(options);
             // 订阅所有已配置的主题
@@ -213,7 +216,7 @@ public class MqttConfig {
     /**
      * 查看客户端连接状态
      */
-    public boolean isConnected() {
+    public boolean isCloseConnected() {
         if (client == null) {
             return true;
         }
@@ -228,7 +231,7 @@ public class MqttConfig {
      * @param qos qos 0-2 推荐 2
      */
     public boolean publish(String topic, String message, int qos) {
-        if (client == null || isConnected()) {
+        if (client == null || isCloseConnected()) {
             logger.error("MQTT客户端未连接，无法发布消息");
             return false;
         }
@@ -266,7 +269,7 @@ public class MqttConfig {
      * @param qos qos 0-2 推荐 2
      */
     public void subscribe(String topic, int qos) {
-        if (client == null || !isConnected()) {
+        if (client == null || isCloseConnected()) {
             logger.error("MQTT客户端未连接，无法订阅主题");
             return;
         }

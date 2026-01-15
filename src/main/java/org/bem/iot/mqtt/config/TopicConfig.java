@@ -14,15 +14,10 @@ import java.util.List;
 public class TopicConfig {
     /**
      * 订阅的Topic
+     * -- SETTER --
+     *  设置订阅的Topic
      */
-    @Value("#{'${spring.mqtt.subscribe.topics:warn_topic,sensor_data,device_status}'.split(',')}")
+    @Value("#{'${spring.mqtt.subscribe.topics:/drive/+/+/post,/device/+/+/post}'.split(',')}")
     private List<String> subscribeTopics;
 
-    /**
-     * 设置订阅的Topic
-     * @param topics 订阅的Topic
-     */
-    public void setSubscribeTopics(List<String> topics) {
-        this.subscribeTopics = topics;
-    }
 }
