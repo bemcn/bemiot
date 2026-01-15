@@ -9,9 +9,6 @@ import org.apache.ibatis.annotations.Param;
 import org.bem.iot.entity.BlacklistImp;
 import org.bem.iot.mapper.postgresql.BlacklistMapper;
 import org.bem.iot.model.system.Blacklist;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -126,7 +123,6 @@ public class BlacklistService {
      * @param blackId 黑名单ID
      * @return 黑名单信息
      */
-    @Cacheable(value = "blacklist", key = "#p0")
     public Blacklist find(@Param("blackId") long blackId) {
         return blacklistMapper.selectById(blackId);
     }
@@ -180,7 +176,6 @@ public class BlacklistService {
      * @param record 黑名单信息
      * @return 返回黑名单信息
      */
-    @CachePut(value = "blacklist", key = "#p0.blackId")
     public Blacklist update(@Param("record") Blacklist record) {
         blacklistMapper.updateById(record);
         return record;
@@ -191,7 +186,6 @@ public class BlacklistService {
      * @param blackId 黑名单ID
      * @return 删除数量
      */
-    @CacheEvict(value = "blacklist", key = "#p0")
     public int del(@Param("blackId") long blackId) {
         return blacklistMapper.deleteById(blackId);
     }
@@ -202,7 +196,6 @@ public class BlacklistService {
      * @return 删除数量
      * @throws Exception 异常信息
      */
-    @CacheEvict(value = "blacklist", allEntries = true)
     public int delArray(List<Integer> idList) throws Exception {
         QueryWrapper<Blacklist> example = new QueryWrapper<>();
         example.in("black_id", idList);

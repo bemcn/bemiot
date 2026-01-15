@@ -1,4 +1,4 @@
-package org.bem.iot.config;
+package org.bem.iot.mqtt.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

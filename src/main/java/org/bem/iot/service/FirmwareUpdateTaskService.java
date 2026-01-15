@@ -14,8 +14,6 @@ import org.bem.iot.model.general.Firmware;
 import org.bem.iot.model.general.FirmwareUpdateLog;
 import org.bem.iot.model.general.FirmwareUpdateTask;
 import org.bem.iot.model.product.Product;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
@@ -70,7 +68,6 @@ public class FirmwareUpdateTaskService {
      * @param taskId 任务ID
      * @return 固件信息
      */
-    @Cacheable(value = "firmwareUpdateTask", key = "#p0")
     public FirmwareUpdateTask find(@Param("taskId") int taskId) {
         return firmwareUpdateTaskMapper.selectById(taskId);
     }
@@ -149,7 +146,6 @@ public class FirmwareUpdateTaskService {
      * @param taskId 任务ID
      * @return 删除数量
      */
-    @CacheEvict(value = "firmwareUpdateTask", key = "#p0")
     public int del(@Param("taskId") int taskId) {
         if(hasTaskLog(taskId)) {
             throw new RuntimeException("已有设备执行升级，禁止删除");

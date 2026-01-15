@@ -34,11 +34,11 @@
 2026-01-13 08:41:48.082 [restartedMain] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTMP流媒体服务启动：成功，端口：7935
 2026-01-13 08:41:48.084 [restartedMain] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】RTC流媒体服务启动：成功，端口：8000
 2026-01-13 08:41:48.084 [restartedMain] INFO  org.bem.iot.media.context.MediaServerContext - 【MediaServer】初始化MediaServer程序成功
-2026-01-13 08:41:48.760 [restartedMain] INFO  org.bem.iot.mqtt.MqttConfig - 订阅主题: warn_topic
-2026-01-13 08:41:48.761 [restartedMain] INFO  org.bem.iot.mqtt.MqttConfig - 订阅主题: sensor_data
-2026-01-13 08:41:48.761 [restartedMain] INFO  org.bem.iot.mqtt.MqttConfig - 订阅主题: device_status
-2026-01-13 08:41:48.762 [restartedMain] INFO  org.bem.iot.mqtt.MqttConfig - 订阅主题: #
-2026-01-13 08:41:48.763 [restartedMain] INFO  org.bem.iot.mqtt.MqttConfig - 已成功连接到MQTT服务器并订阅主题
+2026-01-13 08:41:48.760 [restartedMain] INFO  org.bem.iot.mqtt.config.MqttConfig - 订阅主题: warn_topic
+2026-01-13 08:41:48.761 [restartedMain] INFO  org.bem.iot.mqtt.config.MqttConfig - 订阅主题: sensor_data
+2026-01-13 08:41:48.761 [restartedMain] INFO  org.bem.iot.mqtt.config.MqttConfig - 订阅主题: device_status
+2026-01-13 08:41:48.762 [restartedMain] INFO  org.bem.iot.mqtt.config.MqttConfig - 订阅主题: #
+2026-01-13 08:41:48.763 [restartedMain] INFO  org.bem.iot.mqtt.config.MqttConfig - 已成功连接到MQTT服务器并订阅主题
 2026-01-13 08:41:49.674 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2026-01-13 08:41:50.181 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4581fcd0
 2026-01-13 08:41:50.185 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

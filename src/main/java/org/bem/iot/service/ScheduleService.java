@@ -8,9 +8,6 @@ import org.apache.ibatis.annotations.Param;
 import org.bem.iot.entity.ScheduleStatus;
 import org.bem.iot.mapper.postgresql.ScheduleMapper;
 import org.bem.iot.model.general.Schedule;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -69,7 +66,6 @@ public class ScheduleService {
      * @param scheduleId 定时任务ID
      * @return 定时任务信息
      */
-    @Cacheable(value = "schedule", key = "#p0")
     public Schedule find(@Param("scheduleId") int scheduleId) {
         return scheduleMapper.selectById(scheduleId);
     }
@@ -91,7 +87,6 @@ public class ScheduleService {
      * 修改定时任务
      * @param record 定时任务信息
      */
-    @CachePut(value = "schedule", key = "#p0.scheduleId")
     public Schedule update(@Param("record") Schedule record) {
         scheduleMapper.updateById(record);
         return record;
@@ -101,7 +96,6 @@ public class ScheduleService {
      * 修改状态
      * @param scheduleStatus 提交数据
      */
-    @CachePut(value = "schedule", key = "#p0.scheduleId")
     public Schedule updateStatus(@Param("scheduleStatus") ScheduleStatus scheduleStatus) {
         Schedule record = scheduleMapper.selectById(scheduleStatus.getStatus());
         int status = scheduleStatus.getStatus();
@@ -123,7 +117,6 @@ public class ScheduleService {
      * @param scheduleId 定时任务ID
      * @return 删除数量
      */
-    @CacheEvict(value = "schedule", key = "#p0")
     public int del(@Param("scheduleId") int scheduleId) {
         return scheduleMapper.deleteById(scheduleId);
     }
@@ -133,7 +126,6 @@ public class ScheduleService {
      * @param idList 定时任务ID列表
      * @return 删除数量
      */
-    @CacheEvict(value = "schedule", allEntries = true)
     public int delArray(List<Integer> idList) {
         return scheduleMapper.deleteBatchIds(idList);
     }

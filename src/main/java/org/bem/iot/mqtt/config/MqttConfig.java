@@ -1,9 +1,11 @@
-package org.bem.iot.mqtt;
+package org.bem.iot.mqtt.config;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import jakarta.annotation.Resource;
 import lombok.Getter;
+import org.bem.iot.mqtt.MqttCallBackExtended;
+import org.bem.iot.mqtt.MqttMessageService;
 import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import org.slf4j.Logger;

@@ -6,7 +6,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import jakarta.annotation.Resource;
 import org.bem.iot.mapper.postgresql.GbAreaCodeMapper;
 import org.bem.iot.model.general.GbAreaCode;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,7 +23,6 @@ public class GbAreaCodeService {
      * 获取树形结构
      * @return 固件数量
      */
-    @Cacheable(value = "gb_area_code", key = "'tree'")
     public JSONArray selectTree() {
         QueryWrapper<GbAreaCode> example = new QueryWrapper<>();
         example.eq("level", "province");

@@ -10,7 +10,6 @@ import org.bem.iot.mapper.postgresql.ProductModelMapper;
 import org.bem.iot.model.product.ModelAlarmRules;
 import org.bem.iot.model.product.Product;
 import org.bem.iot.model.product.ProductModel;
-import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -135,7 +134,6 @@ public class ModelAlarmRulesService {
      * 批量删除物模型规则
      * @param idList 物模型规则ID列表
      */
-    @CacheEvict(value = "modelAlarmRules", allEntries = true)
     public int delArray(List<String> idList) {
         return modelAlarmRulesMapper.deleteBatchIds(idList);
     }

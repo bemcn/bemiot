@@ -9,9 +9,6 @@ import org.bem.iot.mapper.postgresql.SceneGroupMapper;
 import org.bem.iot.mapper.postgresql.SceneLinkageMapper;
 import org.bem.iot.model.scene.SceneGroup;
 import org.bem.iot.model.scene.SceneLinkage;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -82,7 +79,6 @@ public class SceneLinkageService {
      * @param sceneId 场景联动ID
      * @return 场景联动信息
      */
-    @Cacheable(value = "scene_linkage", key = "#p0")
     public SceneLinkage find(@Param("sceneId") long sceneId) {
         SceneLinkage data = sceneLinkageMapper.selectById(sceneId);
         associateGroup(data);
@@ -118,7 +114,6 @@ public class SceneLinkageService {
      * 修改场景联动
      * @param record 场景联动信息
      */
-    @CachePut(value = "scene_linkage", key = "#p0.sceneId")
     public SceneLinkage update(@Param("record") SceneLinkage record) {
         sceneLinkageMapper.updateById(record);
         associateGroup(record);
@@ -130,7 +125,6 @@ public class SceneLinkageService {
      * @param sceneId 场景联动ID
      * @param status 状态 0：停用 1：启用
      */
-    @CachePut(value = "scene_linkage", key = "#p0")
     public SceneLinkage updateStatus(@Param("sceneId") long sceneId, int status) {
         SceneLinkage record = sceneLinkageMapper.selectById(sceneId);
         record.setStatus(status);
@@ -144,7 +138,6 @@ public class SceneLinkageService {
      * @param sceneId 场景联动ID
      * @return 删除数量
      */
-    @CacheEvict(value = "scene_linkage", key = "#p0")
     public int del(@Param("sceneId") int sceneId) {
         return sceneLinkageMapper.deleteById(sceneId);
     }
@@ -154,7 +147,6 @@ public class SceneLinkageService {
      * @param idList 场景联动ID列表
      * @return 删除数量
      */
-    @CacheEvict(value = "scene_linkage", allEntries = true)
     public int delArray(List<Integer> idList) {
         return sceneLinkageMapper.deleteBatchIds(idList);
     }

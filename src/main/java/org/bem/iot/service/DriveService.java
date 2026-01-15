@@ -12,10 +12,6 @@ import org.bem.iot.model.general.Drive;
 import org.bem.iot.model.general.DriveParams;
 import org.bem.iot.model.general.Protocols;
 import org.bem.iot.util.ConvertUtil;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -101,8 +97,7 @@ public class DriveService {
      * @param driveCode 驱动编号
      * @return 驱动信息
      */
-    @Cacheable(value = "device", key = "#p0")
-    public Drive find(@Param("driveCode") String driveCode) {
+    public Drive find(String driveCode) {
         Drive drive = driveMapper.selectById(driveCode);
         String protocolName = getProtocolName(drive.getProtocolId());
         drive.setProtocolName(protocolName);
@@ -132,8 +127,7 @@ public class DriveService {
      * 修改驱动
      * @param record 驱动信息
      */
-    @CachePut(value = "device", key = "#p0.driveCode")
-    public Drive update(@Param("record") Drive record) throws Exception {
+    public Drive update(Drive record) throws Exception {
         Drive device = driveMapper.selectById(record.getDriveCode());
         if(device.getDefaultDrive() == 0) {String version = record.getVersion();
             String oldVersion = device.getVersion();
@@ -165,8 +159,7 @@ public class DriveService {
      * 启动驱动
      * @param driveCode 驱动ID
      */
-    @CachePut(value = "device", key = "#p0")
-    public Drive starting(@Param("driveCode") String driveCode) {
+    public Drive starting(String driveCode) {
         //启动驱动,加入驱动控制表
         //保存
         Drive record = driveMapper.selectById(driveCode);
@@ -179,8 +172,7 @@ public class DriveService {
      * 停止驱动
      * @param driveCode 驱动ID
      */
-    @CachePut(value = "device", key = "#p0")
-    public Drive stoping(@Param("driveCode") String driveCode) {
+    public Drive stoping(String driveCode) {
         //停止驱动,移除驱动控制表
         //保存
         Drive record = driveMapper.selectById(driveCode);
@@ -190,18 +182,28 @@ public class DriveService {
     }
 
     /**
+     * 启动驱动
+     * @param driveCode 驱动ID
+     */
+    public void updateStatus(String driveCode, int status) {
+        QueryWrapper<Drive> example = new QueryWrapper<>();
+        example.eq("drive_code", driveCode);
+        example.eq("status", 1);
+        boolean exists = driveMapper.exists(example);
+        if(exists) {
+            Drive record = driveMapper.selectById(driveCode);
+            record.setStatus(status);
+            driveMapper.updateById(record);
+        }
+    }
+
+    /**
      * 删除驱动 (删除前需验证是否关联设备)
      * @param driveCode 驱动编号
      * @return 删除数量
      * @throws Exception 异常信息
      */
-    @Caching(
-            evict = {
-                    @CacheEvict(value = "device", key = "#p0"),
-                    @CacheEvict(value = "device_params", allEntries = true)
-            }
-    )
-    public int del(@Param("driveCode") String driveCode) throws Exception {
+    public int del(String driveCode) throws Exception {
         QueryWrapper<Drive> example = new QueryWrapper<>();
         example.eq("drive_code", driveCode);
         example.eq("default_drive", 0);
@@ -222,12 +224,6 @@ public class DriveService {
      * @return 删除数量
      * @throws Exception 异常信息
      */
-    @Caching(
-            evict = {
-                    @CacheEvict(value = "device", allEntries = true),
-                    @CacheEvict(value = "device_params", allEntries = true)
-            }
-    )
     public int delArray(List<String> codeList) throws Exception {
         QueryWrapper<Drive> example = new QueryWrapper<>();
         example.in("drive_code", codeList);

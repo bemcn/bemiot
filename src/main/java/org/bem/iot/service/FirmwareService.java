@@ -12,10 +12,6 @@ import org.bem.iot.model.general.Firmware;
 import org.bem.iot.model.general.FirmwareVersion;
 import org.bem.iot.model.product.Product;
 import org.bem.iot.util.ConvertUtil;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -106,7 +102,6 @@ public class FirmwareService {
      * @param firmwareId 固件ID
      * @return 固件信息
      */
-    @Cacheable(value = "firmware", key = "#p0")
     public Firmware find(@Param("firmwareId") int firmwareId) {
         Firmware firmware = firmwareMapper.selectById(firmwareId);
         return getUrlToFirmware(firmware);
@@ -156,7 +151,6 @@ public class FirmwareService {
      * 修改固件
      * @param record 固件信息
      */
-    @CachePut(value = "firmware", key = "#p0.firmwareId")
     public Firmware update(@Param("record") Firmware record) throws Exception {
         int firmwareId = record.getFirmwareId();
         String version = record.getVersion();
@@ -195,12 +189,6 @@ public class FirmwareService {
      * @param firmwareId 固件ID
      * @return 删除数量
      */
-    @Caching(
-            evict = {
-                    @CacheEvict(value = "firmware", key = "#p0"),
-                    @CacheEvict(value = "product", allEntries = true)
-            }
-    )
     public int del(@Param("firmwareId") int firmwareId) {
         removeByProduct(firmwareId);
         deleteByVersion(firmwareId);
@@ -212,12 +200,6 @@ public class FirmwareService {
      * @param idList 固件ID列表
      * @return 删除数量
      */
-    @Caching(
-            evict = {
-                    @CacheEvict(value = "firmware", allEntries = true),
-                    @CacheEvict(value = "product", allEntries = true)
-            }
-    )
     public int delArray(List<Integer> idList) {
         removeArrayByProduct(idList);
         deleteArrayByVersion(idList);

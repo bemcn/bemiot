@@ -5,9 +5,6 @@ import jakarta.annotation.Resource;
 import org.apache.ibatis.annotations.Param;
 import org.bem.iot.mapper.postgresql.DriveParamsMapper;
 import org.bem.iot.model.general.DriveParams;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -64,7 +61,6 @@ public class DriveParamsService {
      * @param paramsId 参数ID
      * @return 参数信息
      */
-    @Cacheable(value = "device_params", key = "#p0")
     public DriveParams find(@Param("paramsId") long paramsId) {
         return driveParamsMapper.selectById(paramsId);
     }
@@ -85,7 +81,6 @@ public class DriveParamsService {
      * 添加驱动参数
      * @param record 参数信息
      */
-    @CachePut(value = "device_params", key = "#p0.paramsId")
     public DriveParams update(@Param("record") DriveParams record) {
         DriveParams data = driveParamsMapper.selectById(record.getParamsId());
         data.setGroupType(record.getGroupType());
@@ -102,7 +97,6 @@ public class DriveParamsService {
      * @param paramsId 参数id
      * @param orderNum 排序值
      */
-    @CachePut(value = "device_params", key = "#p0")
     public DriveParams updateOrder(@Param("paramsId") long paramsId, int orderNum) {
         DriveParams record = driveParamsMapper.selectById(paramsId);
         String driveCode = record.getDriveCode();
@@ -143,7 +137,6 @@ public class DriveParamsService {
      * @param paramsId 参数ID
      * @return 删除数量
      */
-    @CacheEvict(value = "device_params", key = "#p0")
     public int del(@Param("paramsId") long paramsId) {
         return driveParamsMapper.deleteById(paramsId);
     }

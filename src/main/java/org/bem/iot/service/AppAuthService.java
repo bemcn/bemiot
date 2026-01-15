@@ -7,9 +7,6 @@ import jakarta.annotation.Resource;
 import org.apache.ibatis.annotations.Param;
 import org.bem.iot.mapper.postgresql.AppAuthMapper;
 import org.bem.iot.model.general.AppAuth;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -102,7 +99,6 @@ public class AppAuthService {
      * @param appId 运用ID
      * @return 运用授权信息信息
      */
-    @Cacheable(value = "app_auth", key = "#p0")
     public AppAuth find(@Param("appId") String appId) {
         return appAuthMapper.selectById(appId);
     }
@@ -123,7 +119,6 @@ public class AppAuthService {
      * 修改运用授权信息信息
      * @param record 运用授权信息信息
      */
-    @CachePut(value = "app_auth", key = "#p0.appId")
     public AppAuth update(@Param("record") AppAuth record) {
         appAuthMapper.updateById(record);
         return record;
@@ -134,7 +129,6 @@ public class AppAuthService {
      * @param appId 运用授权信息ID
      * @return 返回删除数量
      */
-    @CacheEvict(value = "app_auth", key = "#p0")
     public int del(@Param("appId") String appId) {
         QueryWrapper<AppAuth> example = new QueryWrapper<>();
         example.eq("app_id", appId);
@@ -147,7 +141,6 @@ public class AppAuthService {
      * @param idList 运用授权信息ID列表
      * @return 返回删除数量
      */
-    @CacheEvict(value = "app_auth", allEntries = true)
     public int delArray(List<String> idList) {
         QueryWrapper<AppAuth> example = new QueryWrapper<>();
         example.in("app_id", idList);

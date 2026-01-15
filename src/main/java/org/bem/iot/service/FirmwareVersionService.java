@@ -7,8 +7,6 @@ import jakarta.annotation.Resource;
 import org.apache.ibatis.annotations.Param;
 import org.bem.iot.mapper.postgresql.FirmwareVersionMapper;
 import org.bem.iot.model.general.FirmwareVersion;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -59,7 +57,6 @@ public class FirmwareVersionService {
      * @param versionId 版本ID
      * @return 固件信息
      */
-    @Cacheable(value = "firmware_version", key = "#p0")
     public FirmwareVersion find(@Param("versionId") long versionId) {
         return firmwareVersionMapper.selectById(versionId);
     }
@@ -68,7 +65,6 @@ public class FirmwareVersionService {
      * 删除固件版本
      * @param versionId 版本ID
      */
-    @CacheEvict(value = "firmware_version", key = "#p0")
     public int del(@Param("versionId") long versionId) {
         return firmwareVersionMapper.deleteById(versionId);
     }

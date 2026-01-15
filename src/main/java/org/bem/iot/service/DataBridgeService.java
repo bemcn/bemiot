@@ -8,9 +8,6 @@ import org.apache.ibatis.annotations.Param;
 import org.bem.iot.mapper.postgresql.DataBridgeMapper;
 import org.bem.iot.model.scene.DataBridge;
 import org.bem.iot.util.InternalIdUtil;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -68,7 +65,6 @@ public class DataBridgeService {
      * @param bridgeId 数据桥接ID
      * @return 数据桥接信息
      */
-    @Cacheable(value = "data_bridge", key = "#p0")
     public DataBridge find(@Param("bridgeId") String bridgeId) {
         return dataBridgeMapper.selectById(bridgeId);
     }
@@ -87,7 +83,6 @@ public class DataBridgeService {
      * 修改数据桥接
      * @param record 数据桥接信息
      */
-    @CachePut(value = "data_bridge", key = "#p0.bridgeId")
     public DataBridge update(@Param("record") DataBridge record) {
         dataBridgeMapper.updateById(record);
         return record;
@@ -98,7 +93,6 @@ public class DataBridgeService {
      * @param bridgeId 数据桥接ID
      * @param status 状态
      */
-    @CachePut(value = "data_bridge", key = "#p0")
     public DataBridge updateStatus(@Param("bridgeId") String bridgeId, int status) {
         DataBridge record = dataBridgeMapper.selectById(bridgeId);
         record.setStatus(status);
@@ -111,7 +105,6 @@ public class DataBridgeService {
      * @param bridgeId 数据桥接ID
      * @return 删除数量
      */
-    @CacheEvict(value = "data_bridge", key = "#p0")
     public int del(@Param("bridgeId") String bridgeId) {
         return dataBridgeMapper.deleteById(bridgeId);
     }
@@ -121,7 +114,6 @@ public class DataBridgeService {
      * @param idList 数据桥接ID列表
      * @return 删除数量
      */
-    @CacheEvict(value = "data_bridge", allEntries = true)
     public int delArray(List<String> idList) {
         return dataBridgeMapper.deleteBatchIds(idList);
     }
