@@ -101,7 +101,7 @@ public class LogSystemService {
                     String id = InternalIdUtil.createId();
 
                     LogSystem log = new LogSystem();
-//                    log.setTs(System.currentTimeMillis());
+                    log.setTs(System.currentTimeMillis());
                     log.setLogId(id);
                     log.setClientSource(clientSource);
                     log.setClientIp(ipAddress);

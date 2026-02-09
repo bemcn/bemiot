@@ -106,7 +106,7 @@ public class Device implements Serializable {
     private String gatewayId;
 
     /**
-     * 定位方式 0：无 1：自动定位 2：设备定位 3：自定义位置
+     * 定位方式 0：无 1：设备定位 2：自定义位置
      */
     @NotNull(groups = { Add.class, Edit.class }, message = "定位方式不能为空")
     @Min(groups = { Add.class, Edit.class }, value = 0, message = "定位方式提交错误")

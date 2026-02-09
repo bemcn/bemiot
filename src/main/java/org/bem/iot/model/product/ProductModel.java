@@ -51,7 +51,7 @@ public class ProductModel implements Serializable {
     private Integer modelType;
 
     /**
-     * 模型类别 1：属性 2：服务 3：事件 4：标签
+     * 模型类别 1：属性 2：服务 3：事件
      */
     @TableField("model_class")
     private Integer modelClass;

@@ -2,11 +2,11 @@ spring:
   datasource:
     postgresql:
       driver-class-name: org.postgresql.Driver
-      jdbc-url: jdbc:postgresql://127.0.0.1:5432/BemCnIot?currentSchema=public
+      jdbc-url: jdbc:postgresql://106.14.96.231:5432/BemCnIot?currentSchema=public  # 改为jdbc-url
       username: postgres
-      password: admin123456
+      password: vlTx&3b2AU4d#Xb3
       type: com.zaxxer.hikari.HikariDataSource
-      hikari:
+      hikari: # 将Hikari配置移到hikari子节点下
         minimum-idle: 5
         maximum-pool-size: 15
         auto-commit: true
@@ -16,7 +16,7 @@ spring:
         connection-timeout: 30000
     tdengine:
       driver-class-name: com.taosdata.jdbc.rs.RestfulDriver
-      jdbc-url: jdbc:TAOS-RS://127.0.0.1:6041?useSSL=false&user=root&password=admin123456
+      jdbc-url: jdbc:TAOS-RS://106.14.96.231:6041?useSSL=false&user=root&password=4D1f2m6uope7W2Mnn6
       type: com.zaxxer.hikari.HikariDataSource
       hikari:
         minimum-idle: 5
@@ -31,7 +31,7 @@ spring:
     redis:
       host: 127.0.0.1
       port: 6379
-      password: admin123456
+      password: tfBnn799YrubP0
       lettuce:
         pool:
           max-active: 10
@@ -46,9 +46,9 @@ spring:
       time-to-live: 7200
       cache-null-values: false
   mqtt:
-    url: tcp://127.0.0.1:1883
+    url: tcp://106.14.96.231:1883
     username: admin
-    password: admin123456
+    password: fD7Bf2muope32
     connection-timeout: 100
     keep-alive-interval: 20
     max-inflight: 10
@@ -56,13 +56,16 @@ spring:
       topics: warn_topic,sensor_data,device_status,#
   rabbitmq:
     management:
-      host: 127.0.0.1
+      host: 106.14.96.231
       port: 15672
       username: admin
-      password: admin123456
-map-key: 20000002000000000000200000000000
-media:
-  media_ip: 127.0.0.1
+      password: fD7Bf2muope32
+  sql:
+    init:
+      mode: never
+map-key: 2b65b7926a006d8c4bb32f9ecb1733e5
+media: ##目前只增加部分重要配置，更多配置请自行配置
+  media_ip: 127.0.0.1 #播放流ip
   thread_num: 8
   rtmp_port: 7935
   rtsp_port: 7554
@@ -82,9 +85,9 @@ media:
   enable_audio: 1
   mp4_as_player: 1
   mp4_max_second: 3600
-  mp4_save_path: /media
-  hls_save_path: /media
-  rootPath: /media
+  mp4_save_path: D:/media
+  hls_save_path: D:/media
+  rootPath: D:/media
   hls_demand: 0
   broadcastRecordTs: 1
   segDur: 3
@@ -94,6 +97,6 @@ media:
   ts_demand: 1
   fmp4_demand: 1
   log_level: 2
-  log_mask: 1
+  log_mask: 1  #1console 2file 4fun
   log_file_days: 1
-  log_path: /media
+  log_path: E:/media

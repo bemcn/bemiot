@@ -82,9 +82,6 @@ public class SceneLinkage implements Serializable {
     /**
      * 状态 0：停用 1：启用
      */
-    @NotNull(groups = { Add.class, Edit.class }, message = "状态不能为空")
-    @Min(groups = { Add.class, Edit.class }, value = 0, message = "状态提交错误")
-    @Max(groups = { Add.class, Edit.class }, value = 1, message = "状态提交错误")
     @TableField("status")
     private Integer status;
 

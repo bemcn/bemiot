@@ -122,7 +122,7 @@ public class MqttCallBackExtended implements MqttCallback {
     /**
      * 消息发布成功时回调<br/>
      * 本端（与设备端相反）：<br/>
-     * &nbsp;&nbsp;&nbsp;&nbsp; /device/register/{deviceCode}/get  发送设备注册验证结果
+     * &nbsp;&nbsp;&nbsp;&nbsp; /device/active/{deviceCode}/get  发送设备激活验证结果
      * &nbsp;&nbsp;&nbsp;&nbsp; /device/func/{deviceCode}/get  发送平台指令控制
      * &nbsp;&nbsp;&nbsp;&nbsp; /device/info/{deviceCode}/get  发送设备信息
      * &nbsp;&nbsp;&nbsp;&nbsp; /device/ntp/{deviceCode}/get  发送时钟同步数据

@@ -82,4 +82,7 @@ public interface IotDataMapper {
 
     @Delete("DELETE FROM bemcn.${tableName}")
     int delAll(@Param("tableName") String tableName);
+
+    @Insert("${sql}")
+    void executeSql(String sql);
 }

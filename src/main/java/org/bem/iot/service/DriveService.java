@@ -181,22 +181,6 @@ public class DriveService {
     }
 
     /**
-     * 启动驱动
-     * @param driveCode 驱动ID
-     */
-    public void updateStatus(String driveCode, int status) {
-        QueryWrapper<Drive> example = new QueryWrapper<>();
-        example.eq("drive_code", driveCode);
-        example.eq("status", 1);
-        boolean exists = driveMapper.exists(example);
-        if(exists) {
-            Drive record = driveMapper.selectById(driveCode);
-            record.setStatus(status);
-            driveMapper.updateById(record);
-        }
-    }
-
-    /**
      * 删除驱动 (删除前需验证是否关联设备)
      * @param driveCode 驱动编号
      * @return 删除数量

@@ -1,5 +1,6 @@
 package org.bem.iot.service;
 
+import com.alibaba.fastjson2.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -196,20 +197,20 @@ public class ProductModelService {
         int status = 0;
         if(online == 0) {
             status = 1;
-            value = switch (dataType) {
-                case "int", "number" -> "0";
-                case "bool" -> "false";
-                default -> "";
-            };
+            if("bool".equals(dataType)) {
+                value = "false";
+            } else {
+                value = "null";
+            }
         } else {
             if (Boolean.TRUE.equals(stringRedisTemplate.hasKey(key))) {
                 value = stringRedisTemplate.opsForValue().get(key);
             } else {
-                value = switch (dataType) {
-                    case "int", "number" -> "0";
-                    case "bool" -> "false";
-                    default -> "";
-                };
+                if("bool".equals(dataType)) {
+                    value = "false";
+                } else {
+                    value = "null";
+                }
             }
         }
         data.setValue(value);
@@ -238,9 +239,14 @@ public class ProductModelService {
                     createIotTable(productId);
                 } else {
                     String dataType = record.getDataType();
-                    String modelIdentity = record.getModelIdentity();
-                    int history = record.getHistory();
-                    addIotTableColumn(productId, modelIdentity, dataType, history);
+                    String modelIdentity = record.getModelIdentity();//maxLength
+                    String dataDefinition = record.getDataDefinition();
+                    JSONObject definition = JSONObject.parseObject(dataDefinition);
+                    int modelClass = record.getModelClass();
+                    if(modelClass == 1) {
+                        addIotTableColumn(productId, modelIdentity, dataType, definition);
+                    }
+
                 }
             }
         }
@@ -251,7 +257,7 @@ public class ProductModelService {
 
         QueryWrapper<ProductModel> example = new QueryWrapper<>();
         example.eq("product_id", productId);
-        example.eq("history", 1);
+        example.in("model_class", 1);
         List<ProductModel> modelList = productModelMapper.selectList(example);
 
         StringBuilder fileds = new StringBuilder("ts timestamp");
@@ -285,20 +291,27 @@ public class ProductModelService {
             logger.error("创建物模型{}表异常：{}", productId, e.getMessage());
         }
     }
-    private void addIotTableColumn(String productId, String modelIdentity, String dataType, int history) {
-        if(history == 1) {
-            String columnType = switch (dataType) {
-                case "int", "enum" -> "int";
-                case "number" -> "float";
-                case "timestamp" -> "timestamp";
-                case "bool" -> "bool";
-                default -> "varchar(255)";
-            };
-            try {
-                iotStableMapper.addStableColumn(productId, modelIdentity, columnType);
-            } catch (Exception e) {
-                logger.error("新增物模型{}字段{}异常：{}", productId, modelIdentity, e.getMessage());
-            }
+    private void addIotTableColumn(String productId, String modelIdentity, String dataType, JSONObject definition) {
+        String columnType = "";
+        if("int".equals(dataType) || "enum".equals(dataType)) {
+            columnType = "INT";
+        } else if("number".equals(dataType)) {
+            columnType = "FLOAT";
+        } else if("timestamp".equals(dataType)) {
+            columnType = "TIMESTAMP";
+        } else if("bool".equals(dataType)) {
+            columnType = "BOOL";
+        } else if("text".equals(dataType)) {
+            String maxLengthStr = definition.getString("maxLength");
+            int maxLength = Integer.parseInt(maxLengthStr) * 2;
+            columnType = "NCHAR(" + maxLength + ")";
+        } else {
+            columnType = "NCHAR(500)";
+        }
+        try {
+            iotStableMapper.addStableColumn(productId, modelIdentity, columnType);
+        } catch (Exception e) {
+            logger.error("新增物模型{}字段{}异常：{}", productId, modelIdentity, e.getMessage());
         }
     }
 
@@ -316,6 +329,7 @@ public class ProductModelService {
         int oldClass = oldModel.getModelClass();
         int newHistory = record.getHistory();
         int oldHistory = oldModel.getHistory();
+        JSONObject definition = JSONObject.parseObject(record.getDataDefinition());
 
         if(newHistory != oldHistory) {
             if(newHistory == 0 && oldHistory == 1) {
@@ -328,7 +342,7 @@ public class ProductModelService {
                 }
             } else {
                 if(oldClass > 2 && newClass < 3) {
-                    addIotTableColumn(productId, modelIdentity, dataType, 1);
+                    addIotTableColumn(productId, modelIdentity, dataType, definition);
                 } else if(oldClass < 3 && newClass > 2) {
                     try {
                         iotStableMapper.dropStableColumn(productId, modelIdentity);
@@ -340,7 +354,7 @@ public class ProductModelService {
         } else {
             if(newHistory == 1) {
                 if(oldClass > 2 && newClass < 3) {
-                    addIotTableColumn(productId, modelIdentity, dataType, 1);
+                    addIotTableColumn(productId, modelIdentity, dataType, definition);
                 } else if(oldClass < 3 && newClass > 2) {
                     try {
                         iotStableMapper.dropStableColumn(productId, modelIdentity);

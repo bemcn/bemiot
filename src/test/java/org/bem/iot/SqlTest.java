@@ -35,6 +35,18 @@ public class SqlTest {
     StatisticsOptionMessageMapper statisticsOptionMessageMapper;
 
     @Test
+    public void createDeviceModelTables() {
+        RedisConnection connection = Objects.requireNonNull(redisTemplate.getConnectionFactory()).getConnection();
+        Properties info = connection.serverCommands().info("stats");
+        System.out.println("------------------------------------------");
+        if (info != null) {
+            System.out.println(info.getProperty("keyspace_hits"));
+            System.out.println(info.getProperty("keyspace_misses"));
+        }
+        System.out.println("------------------------------------------");
+    }
+
+    @Test
     public void queryTest1() {
         RedisConnection connection = Objects.requireNonNull(redisTemplate.getConnectionFactory()).getConnection();
         Properties info = connection.serverCommands().info("stats");

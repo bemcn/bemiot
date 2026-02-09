@@ -11,6 +11,7 @@ import org.bem.iot.model.scene.SceneGroup;
 import org.bem.iot.model.scene.SceneLinkage;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -107,6 +108,7 @@ public class SceneLinkageService {
     public void insert(SceneLinkage record) {
         record.setSceneId(null);
         record.setStatus(1);
+        record.setCreateTime(new Date());
         sceneLinkageMapper.insert(record);
     }
 
